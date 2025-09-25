@@ -1,0 +1,238 @@
+# SubTaskList: Database Design
+
+## Overview
+Design and implement the database schema for the idle RPG game, including player data, item systems, monster encounters, and all supporting data structures. This forms the data foundation for the entire game.
+
+## Dependencies
+- Project Setup completed
+- Backend API Foundation (for database integration)
+
+## Prerequisites
+- Database system chosen (PostgreSQL/MongoDB)
+- Database administration tools installed
+- Data modeling tools available
+
+---
+
+## 🗄️ Core Database Design Tasks
+
+### 1. Player Data Schema
+- [ ] **User Management Tables**
+  - [ ] Design users table (id, username, email, password_hash, created_at, last_login)
+  - [ ] Create user_sessions table for authentication tracking
+  - [ ] Design user_preferences table (settings, UI preferences, notifications)
+  - [ ] Create user_statistics table (playtime, achievements, milestones)
+  - [ ] Design user_verification table for email/phone verification
+
+- [ ] **Character Data Schema**
+  - [ ] Design characters table (id, user_id, name, class, level, experience)
+  - [ ] Create character_stats table (strength, dexterity, intelligence, vitality)
+  - [ ] Design character_skills table (skill_id, level, experience, unlocked)
+  - [ ] Create character_equipment table (equipment_slots, equipped_items)
+  - [ ] Design character_progress table (current_area, quest_progress, achievements)
+
+- [ ] **Character Progression Schema**
+  - [ ] Create character_levels table (level, experience_required, stat_bonuses)
+  - [ ] Design skill_trees table (skill_id, parent_skills, requirements, effects)
+  - [ ] Create prestige_data table (prestige_level, bonuses, reset_data)
+  - [ ] Design mastery_points table (category, points_allocated, bonuses)
+
+### 2. Item Database Schema
+- [ ] **Base Item System**
+  - [ ] Design item_types table (weapon, armor, accessory, consumable, etc.)
+  - [ ] Create item_bases table (base_name, item_type, level_req, base_stats)
+  - [ ] Design item_rarities table (rarity_name, color_code, drop_rate_modifier)
+  - [ ] Create item_slots table (slot_name, compatible_item_types)
+  - [ ] Design item_requirements table (level_req, stat_req, class_req)
+
+- [ ] **Affix System Schema**
+  - [ ] Create affix_pools table (affix_id, name, type, tier, min_level)
+  - [ ] Design affix_stats table (affix_id, stat_type, min_value, max_value, scaling)
+  - [ ] Create affix_restrictions table (affix_id, item_type_restrictions, conflicts)
+  - [ ] Design affix_generation table (rarity, affix_count_min, affix_count_max)
+  - [ ] Create affix_tiers table (tier, level_range, weight_modifier)
+
+- [ ] **Item Generation Schema**
+  - [ ] Design generated_items table (item_id, base_id, affixes, stats, generation_data)
+  - [ ] Create item_instances table (instance_id, item_id, owner_id, durability, socketed_items)
+  - [ ] Design item_sets table (set_id, set_name, pieces, bonuses)
+  - [ ] Create unique_items table (unique_id, name, fixed_stats, special_abilities)
+  - [ ] Design item_generation_log table (generation_data, affix_rolls, debug_info)
+
+### 3. Monster/Encounter Database
+- [ ] **Monster Data Schema**
+  - [ ] Create monster_types table (monster_id, name, level, health, damage, defense)
+  - [ ] Design monster_stats table (monster_id, stat_type, base_value, scaling)
+  - [ ] Create monster_abilities table (monster_id, ability_name, damage, effects)
+  - [ ] Design monster_loot_tables table (monster_id, item_id, drop_rate, quantity)
+  - [ ] Create monster_spawn_data table (area_id, monster_id, spawn_rate, level_range)
+
+- [ ] **Encounter System Schema**
+  - [ ] Design encounter_areas table (area_id, name, level_range, monster_types)
+  - [ ] Create encounter_instances table (instance_id, area_id, player_id, start_time)
+  - [ ] Design boss_encounters table (boss_id, name, special_mechanics, loot_table)
+  - [ ] Create elite_monsters table (elite_id, base_monster, modifiers, enhanced_loot)
+
+### 4. Game Economy Schema
+- [ ] **Currency System**
+  - [ ] Design currencies table (currency_id, name, type, description)
+  - [ ] Create player_currencies table (player_id, currency_id, amount)
+  - [ ] Design currency_transactions table (transaction_id, player_id, amount, reason)
+  - [ ] Create vendor_items table (vendor_id, item_id, price, stock, refresh_rate)
+
+- [ ] **Trading System**
+  - [ ] Design trading_post table (trade_id, seller_id, item_id, price, status)
+  - [ ] Create trade_history table (trade_id, buyer_id, seller_id, item_id, price, timestamp)
+  - [ ] Design auction_house table (auction_id, seller_id, item_id, starting_bid, current_bid, end_time)
+
+---
+
+## 🔧 Database Implementation Tasks
+
+### 5. Database Setup
+- [ ] **Database Installation**
+  - [ ] Install PostgreSQL/MongoDB server
+  - [ ] Configure database server settings
+  - [ ] Set up database users and permissions
+  - [ ] Configure connection pooling
+  - [ ] Set up database monitoring tools
+
+- [ ] **Schema Implementation**
+  - [ ] Create all tables with proper constraints
+  - [ ] Set up foreign key relationships
+  - [ ] Create indexes for performance optimization
+  - [ ] Set up triggers for data consistency
+  - [ ] Configure database views for complex queries
+
+### 6. Database Migration System
+- [ ] **Migration Framework**
+  - [ ] Set up migration tool (Knex.js/Sequelize migrations)
+  - [ ] Create migration file structure
+  - [ ] Set up migration versioning system
+  - [ ] Configure rollback procedures
+  - [ ] Create migration testing framework
+
+- [ ] **Initial Migrations**
+  - [ ] Create initial schema migration
+  - [ ] Create seed data migrations
+  - [ ] Set up development data population
+  - [ ] Create production data setup
+  - [ ] Configure migration deployment pipeline
+
+### 7. Data Backup and Recovery
+- [ ] **Backup Strategy**
+  - [ ] Set up automated daily backups
+  - [ ] Configure incremental backup system
+  - [ ] Set up backup verification procedures
+  - [ ] Create backup retention policies
+  - [ ] Set up cross-region backup replication
+
+- [ ] **Recovery Procedures**
+  - [ ] Create disaster recovery plan
+  - [ ] Set up point-in-time recovery
+  - [ ] Test recovery procedures regularly
+  - [ ] Create recovery documentation
+  - [ ] Set up automated recovery testing
+
+---
+
+## 📊 Advanced Database Features
+
+### 8. Performance Optimization
+- [ ] **Indexing Strategy**
+  - [ ] Analyze query patterns and create appropriate indexes
+  - [ ] Set up composite indexes for complex queries
+  - [ ] Configure partial indexes for filtered data
+  - [ ] Monitor index usage and performance
+  - [ ] Set up index maintenance procedures
+
+- [ ] **Query Optimization**
+  - [ ] Optimize slow queries identified in testing
+  - [ ] Set up query performance monitoring
+  - [ ] Create database views for complex operations
+  - [ ] Implement query caching where appropriate
+  - [ ] Set up database connection optimization
+
+### 9. Data Validation and Constraints
+- [ ] **Data Integrity**
+  - [ ] Set up check constraints for data validation
+  - [ ] Create unique constraints where needed
+  - [ ] Set up foreign key constraints
+  - [ ] Implement data validation triggers
+  - [ ] Create data quality monitoring
+
+- [ ] **Security Measures**
+  - [ ] Set up row-level security policies
+  - [ ] Configure database encryption
+  - [ ] Set up audit logging for sensitive operations
+  - [ ] Create backup encryption
+  - [ ] Set up access control and permissions
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Schema Design (Week 1)
+- [ ] All core tables designed and documented
+- [ ] Relationships and constraints defined
+- [ ] Database setup completed
+- [ ] Initial migrations created
+
+### Milestone 2: Implementation & Testing (Week 2)
+- [ ] All tables created and tested
+- [ ] Seed data populated
+- [ ] Migration system working
+- [ ] Basic queries optimized
+
+### Milestone 3: Production Ready (Week 3)
+- [ ] Backup and recovery procedures
+- [ ] Performance optimization complete
+- [ ] Security measures implemented
+- [ ] Documentation complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Player data schema + Item database schema
+- Monster/encounter schema + Game economy schema
+- Database setup + Migration system setup
+- Performance optimization + Security measures
+
+### Sequential Dependencies:
+- Migration system depends on schema design
+- Performance optimization depends on basic implementation
+- Backup system depends on database setup
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] All game data can be stored and retrieved efficiently
+- [ ] Database supports expected player load (10,000+ concurrent users)
+- [ ] Data integrity is maintained through all operations
+- [ ] Backup and recovery procedures tested and documented
+- [ ] Performance meets requirements (<100ms for most queries)
+- [ ] Security measures protect sensitive player data
+
+---
+
+## 📝 Notes
+
+### Database Choice Considerations:
+- **PostgreSQL**: ACID compliance, JSON support, excellent performance
+- **MongoDB**: Flexible schema, good for rapid iteration, document-based
+- **Hybrid**: PostgreSQL for relational data, Redis for caching
+
+### Performance Considerations:
+- Plan for horizontal scaling from day one
+- Use connection pooling for high concurrency
+- Implement read replicas for query distribution
+- Consider sharding strategies for large datasets
+
+### Security Considerations:
+- Encrypt sensitive data at rest and in transit
+- Implement proper access controls
+- Regular security audits and updates
+- GDPR compliance for EU players

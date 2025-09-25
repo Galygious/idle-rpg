@@ -1,0 +1,272 @@
+# SubTaskList: Set Items
+
+## Overview
+Design and implement the set item system that creates themed item collections with progressive bonuses. This includes set themes, piece identification, progressive bonuses, drop rate balancing, and visual indicators - a key feature of the Diablo II-inspired loot system.
+
+## Dependencies
+- Base Item System completed
+- Item Generation Engine completed
+- Database Design completed (for set data storage)
+
+## Prerequisites
+- Set themes and concepts designed
+- Progressive bonus system planned
+- Set item drop mechanics defined
+
+---
+
+## 🛡️ Core Set Item System Tasks
+
+### 1. Set Item Themes and Bonuses
+- [ ] **Set Theme Design**
+  - [ ] Create warrior-themed sets (barbarian, knight, berserker)
+  - [ ] Design mage-themed sets (wizard, sorcerer, necromancer)
+  - [ ] Implement rogue-themed sets (assassin, ranger, thief)
+  - [ ] Create paladin-themed sets (holy warrior, templar, crusader)
+  - [ ] Design hybrid-themed sets (spellsword, battlemage, druid)
+
+- [ ] **Set Piece Categories**
+  - [ ] Create weapon sets (sword sets, bow sets, staff sets)
+  - [ ] Design armor sets (plate sets, leather sets, robes)
+  - [ ] Implement accessory sets (ring sets, amulet sets, charm sets)
+  - [ ] Create mixed sets (weapon + armor combinations)
+  - [ ] Design complete sets (all equipment slots)
+
+- [ ] **Set Bonus Themes**
+  - [ ] Create combat-focused bonuses (damage, defense, speed)
+  - [ ] Design utility-focused bonuses (resource management, movement)
+  - [ ] Implement skill-focused bonuses (skill levels, cooldowns)
+  - [ ] Create economy-focused bonuses (gold find, magic find)
+  - [ ] Design special ability bonuses (unique set powers)
+
+### 2. Progressive Set Bonuses (2-piece, 4-piece, 6-piece)
+- [ ] **Bonus Progression System**
+  - [ ] Design 2-piece bonus effects (minor bonuses, stat increases)
+  - [ ] Create 4-piece bonus effects (moderate bonuses, special abilities)
+  - [ ] Implement 6-piece bonus effects (major bonuses, unique powers)
+  - [ ] Create 8-piece bonus effects (legendary bonuses, game-changing abilities)
+  - [ ] Design partial set bonuses (1-piece, 3-piece, 5-piece, 7-piece)
+
+- [ ] **Bonus Scaling and Balance**
+  - [ ] Create bonus scaling based on set piece levels
+  - [ ] Design bonus scaling based on character level
+  - [ ] Implement bonus scaling based on set rarity
+  - [ ] Create bonus stacking and interaction rules
+  - [ ] Design bonus caps and diminishing returns
+
+- [ ] **Bonus Types and Categories**
+  - [ ] Create stat bonuses (+X strength, +X% damage)
+  - [ ] Design skill bonuses (+X to skill levels)
+  - [ ] Implement resource bonuses (+X mana, +X% mana regen)
+  - [ ] Create utility bonuses (faster run/walk, teleport)
+  - [ ] Design special ability bonuses (auras, transformations)
+
+### 3. Set Piece Identification System
+- [ ] **Set Piece Recognition**
+  - [ ] Create set piece detection and identification
+  - [ ] Design set piece naming and description system
+  - [ ] Implement set piece visual identification
+  - [ ] Create set piece collection tracking
+  - [ ] Design set piece completion status display
+
+- [ ] **Set Collection Management**
+  - [ ] Create set collection tracking per character
+  - [ ] Design set collection progress indicators
+  - [ ] Implement set collection achievement system
+  - [ ] Create set collection sharing and trading
+  - [ ] Design set collection statistics and analytics
+
+- [ ] **Set Piece Relationships**
+  - [ ] Create set piece compatibility checking
+  - [ ] Design set piece synergy calculations
+  - [ ] Implement set piece conflict resolution
+  - [ ] Create set piece upgrade and enhancement
+  - [ ] Design set piece customization options
+
+### 4. Set Item Drop Rate Balancing
+- [ ] **Drop Rate System**
+  - [ ] Create base drop rates for set items
+  - [ ] Design drop rate modifiers based on monster type
+  - [ ] Implement drop rate modifiers based on area difficulty
+  - [ ] Create drop rate modifiers based on character level
+  - [ ] Design drop rate modifiers based on magic find
+
+- [ ] **Set Piece Distribution**
+  - [ ] Create balanced set piece drop distribution
+  - [ ] Design set piece rarity scaling
+  - [ ] Implement set piece availability by area
+  - [ ] Create set piece seasonal availability
+  - [ ] Design set piece event-based drops
+
+- [ ] **Drop Rate Balancing Tools**
+  - [ ] Create drop rate monitoring and analytics
+  - [ ] Design drop rate adjustment algorithms
+  - [ ] Implement drop rate A/B testing framework
+  - [ ] Create drop rate feedback collection
+  - [ ] Design drop rate optimization recommendations
+
+### 5. Set Item Visual Indicators
+- [ ] **Visual Identification System**
+  - [ ] Create set item border colors and styles
+  - [ ] Design set item glow effects and particles
+  - [ ] Implement set item name coloring and formatting
+  - [ ] Create set item icon variations and overlays
+  - [ ] Design set item tooltip styling and layout
+
+- [ ] **Set Collection Visual Feedback**
+  - [ ] Create set collection progress bars and indicators
+  - [ ] Design set bonus activation visual effects
+  - [ ] Implement set completion celebration animations
+  - [ ] Create set piece connection lines and relationships
+  - [ ] Design set collection achievement notifications
+
+- [ ] **Set Item Enhancement Visuals**
+  - [ ] Create set item upgrade visual effects
+  - [ ] Design set item socketing visual indicators
+  - [ ] Implement set item enhancement visual feedback
+  - [ ] Create set item transformation visual effects
+  - [ ] Design set item legendary visual upgrades
+
+### 6. Set Item Trading Restrictions
+- [ ] **Trading Rules and Restrictions**
+  - [ ] Create set item trading permission system
+  - [ ] Design set item trading cooldowns and limits
+  - [ ] Implement set item trading value calculations
+  - [ ] Create set item trading validation and verification
+  - [ ] Design set item trading history and tracking
+
+- [ ] **Set Item Economy Integration**
+  - [ ] Create set item vendor pricing system
+  - [ ] Design set item auction house integration
+  - [ ] Implement set item market value tracking
+  - [ ] Create set item inflation control mechanisms
+  - [ ] Design set item economic event integration
+
+- [ ] **Set Item Security**
+  - [ ] Create set item duplication prevention
+  - [ ] Design set item authenticity verification
+  - [ ] Implement set item trade logging and monitoring
+  - [ ] Create set item fraud detection and prevention
+  - [ ] Design set item recovery and restoration systems
+
+---
+
+## 🔧 Advanced Set Item Features
+
+### 7. Set Item Enhancement and Customization
+- [ ] **Set Item Upgrading**
+  - [ ] Create set item level upgrading system
+  - [ ] Design set item stat enhancement mechanics
+  - [ ] Implement set item affix improvement system
+  - [ ] Create set item durability and condition upgrades
+  - [ ] Design set item special ability enhancements
+
+- [ ] **Set Item Customization**
+  - [ ] Create set item appearance customization
+  - [ ] Design set item stat redistribution options
+  - [ ] Implement set item affix rerolling mechanics
+  - [ ] Create set item socketing and gem integration
+  - [ ] Design set item transformation and evolution
+
+### 8. Set Item Analytics and Balance
+- [ ] **Set Item Performance Tracking**
+  - [ ] Create set item usage analytics
+  - [ ] Design set item performance metrics
+  - [ ] Implement set item balance monitoring
+  - [ ] Create set item optimization recommendations
+  - [ ] Design set item A/B testing framework
+
+- [ ] **Set Item Community Features**
+  - [ ] Create set item sharing and showcase system
+  - [ ] Design set item build guides and recommendations
+  - [ ] Implement set item community voting and rating
+  - [ ] Create set item trading community features
+  - [ ] Design set item achievement and leaderboard systems
+
+### 9. Set Item Seasonal and Event Integration
+- [ ] **Seasonal Set Items**
+  - [ ] Create seasonal set item themes and bonuses
+  - [ ] Design seasonal set item availability and rotation
+  - [ ] Implement seasonal set item special effects
+  - [ ] Create seasonal set item collection rewards
+  - [ ] Design seasonal set item legacy and preservation
+
+- [ ] **Event-Based Set Items**
+  - [ ] Create event-specific set items and bonuses
+  - [ ] Design event set item participation rewards
+  - [ ] Implement event set item collaboration features
+  - [ ] Create event set item competitive elements
+  - [ ] Design event set item community challenges
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Set System (Week 1)
+- [ ] Set themes and bonuses defined
+- [ ] Progressive bonus system implemented
+- [ ] Set piece identification working
+- [ ] Basic drop rate balancing complete
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Visual indicators system complete
+- [ ] Trading restrictions implemented
+- [ ] Set enhancement system working
+- [ ] Analytics and balance tools functional
+
+### Milestone 3: Polish & Integration (Week 3)
+- [ ] Seasonal/event integration complete
+- [ ] Community features implemented
+- [ ] Performance optimization done
+- [ ] Documentation and guides complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Set themes + Progressive bonuses
+- Set identification + Drop rate balancing
+- Visual indicators + Trading restrictions
+- Set enhancement + Analytics tools
+
+### Sequential Dependencies:
+- Progressive bonuses depend on set themes
+- Drop rate balancing depends on set identification
+- Advanced features depend on core systems
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] Set items provide meaningful collection goals
+- [ ] Progressive bonuses create engaging progression
+- [ ] Set drop rates are balanced and fair
+- [ ] Visual indicators are clear and attractive
+- [ ] Set trading system is secure and functional
+- [ ] Set system enhances overall gameplay experience
+
+---
+
+## 📝 Notes
+
+### Design Considerations:
+- Ensure set items provide clear collection goals
+- Balance set bonuses with individual item power
+- Create sets that appeal to different playstyles
+- Design for both casual and hardcore collectors
+- Plan for long-term set system evolution
+
+### Technical Considerations:
+- Use efficient algorithms for set piece detection
+- Implement proper set data validation
+- Design for easy set system modifications
+- Consider set data versioning and migration
+- Plan for set system performance optimization
+
+### Balance Considerations:
+- Test set drop rates and collection satisfaction
+- Ensure no single set dominates gameplay
+- Balance set power with individual item progression
+- Consider set economy and trading dynamics
+- Plan for set system balance updates

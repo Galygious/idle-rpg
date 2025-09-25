@@ -1,0 +1,272 @@
+# SubTaskList: Item Generation Engine
+
+## Overview
+Implement the core item generation engine that combines base items, affixes, and rarity systems to create the random loot that drives the Diablo II-inspired gameplay. This includes generation algorithms, rarity-based limits, scaling systems, and special generation events.
+
+## Dependencies
+- Base Item System completed
+- Affix System completed
+- Database Design completed (for item storage)
+
+## Prerequisites
+- Item generation algorithms designed
+- Rarity system implemented
+- Monster/area level scaling defined
+
+---
+
+## ⚙️ Core Generation Engine Tasks
+
+### 1. Random Item Generation Algorithm
+- [ ] **Generation Core Logic**
+  - [ ] Create base item selection algorithm (weighted by rarity and level)
+  - [ ] Implement affix count determination based on rarity
+  - [ ] Design affix selection algorithm with tier restrictions
+  - [ ] Create stat roll calculation with proper distribution
+  - [ ] Implement generation validation and error handling
+
+- [ ] **Generation Parameters**
+  - [ ] Create generation seed management for reproducible results
+  - [ ] Implement generation context (monster level, area, difficulty)
+  - [ ] Design generation modifiers (magic find, luck bonuses)
+  - [ ] Create generation quality settings (normal, enhanced, perfect)
+  - [ ] Implement generation debugging and logging
+
+- [ ] **Generation Optimization**
+  - [ ] Create efficient generation algorithms for high volume
+  - [ ] Implement generation result caching where appropriate
+  - [ ] Design batch generation for multiple items
+  - [ ] Create generation performance monitoring
+  - [ ] Implement generation memory optimization
+
+### 2. Rarity-Based Affix Count Limits
+- [ ] **Rarity Affix Limits**
+  - [ ] Define affix count limits for Common items (0 affixes)
+  - [ ] Create affix count limits for Magic items (1-2 affixes)
+  - [ ] Implement affix count limits for Rare items (3-6 affixes)
+  - [ ] Design affix count limits for Set items (fixed affixes)
+  - [ ] Create affix count limits for Unique items (fixed affixes)
+
+- [ ] **Affix Count Distribution**
+  - [ ] Create weighted distribution for affix count selection
+  - [ ] Implement affix count modifiers based on item level
+  - [ ] Design affix count bonuses from special conditions
+  - [ ] Create affix count penalties for certain item types
+  - [ ] Implement affix count validation and correction
+
+- [ ] **Special Rarity Cases**
+  - [ ] Create special generation for ethereal items
+  - [ ] Design special generation for superior items
+  - [ ] Implement special generation for low-quality items
+  - [ ] Create special generation for corrupted items
+  - [ ] Design special generation for blessed items
+
+### 3. Item Level vs Character Level Scaling
+- [ ] **Level-Based Generation**
+  - [ ] Create character level influence on item generation
+  - [ ] Implement monster level to item level conversion
+  - [ ] Design area level to item level scaling
+  - [ ] Create level-based affix tier availability
+  - [ ] Implement level-based stat roll scaling
+
+- [ ] **Scaling Formulas**
+  - [ ] Create item level calculation formulas
+  - [ ] Design stat scaling based on item level
+  - [ ] Implement requirement scaling based on item level
+  - [ ] Create value scaling based on item level
+  - [ ] Design durability scaling based on item level
+
+- [ ] **Level Restrictions**
+  - [ ] Create minimum item level floors
+  - [ ] Implement maximum item level caps
+  - [ ] Design level-based generation modifiers
+  - [ ] Create level-based drop rate adjustments
+  - [ ] Implement level-based quality bonuses
+
+### 4. Boss/Elite Monster Loot Tables
+- [ ] **Boss Loot System**
+  - [ ] Create boss-specific loot tables with enhanced rewards
+  - [ ] Design boss loot scaling based on difficulty
+  - [ ] Implement boss loot bonuses (guaranteed rare+ items)
+  - [ ] Create boss-specific unique item drops
+  - [ ] Design boss loot cooldown and respawn mechanics
+
+- [ ] **Elite Monster Loot**
+  - [ ] Create elite monster enhanced loot tables
+  - [ ] Design elite monster affix bonuses
+  - [ ] Implement elite monster drop rate multipliers
+  - [ ] Create elite monster special item generation
+  - [ ] Design elite monster loot scaling
+
+- [ ] **Loot Table Management**
+  - [ ] Create loot table configuration system
+  - [ ] Design loot table balancing tools
+  - [ ] Implement loot table versioning and updates
+  - [ ] Create loot table testing and validation
+  - [ ] Design loot table analytics and monitoring
+
+### 5. Seasonal/Event Item Modifiers
+- [ ] **Seasonal Generation**
+  - [ ] Create seasonal item generation modifiers
+  - [ ] Design seasonal affix pools and bonuses
+  - [ ] Implement seasonal item appearance changes
+  - [ ] Create seasonal drop rate adjustments
+  - [ ] Design seasonal item special effects
+
+- [ ] **Event-Based Generation**
+  - [ ] Create event-specific item generation
+  - [ ] Design event loot tables and rewards
+  - [ ] Implement event item modifiers and bonuses
+  - [ ] Create event-specific unique items
+  - [ ] Design event item collection and tracking
+
+- [ ] **Special Generation Events**
+  - [ ] Create double loot events
+  - [ ] Design perfect item generation events
+  - [ ] Implement mass item generation events
+  - [ ] Create special affix availability events
+  - [ ] Design item generation tournaments
+
+### 6. Item Generation Logging
+- [ ] **Generation Debug System**
+  - [ ] Create comprehensive generation logging
+  - [ ] Design generation result tracking
+  - [ ] Implement generation performance monitoring
+  - [ ] Create generation error detection and reporting
+  - [ ] Design generation analytics and statistics
+
+- [ ] **Generation Validation**
+  - [ ] Create generation result validation
+  - [ ] Design generation integrity checks
+  - [ ] Implement generation consistency verification
+  - [ ] Create generation regression testing
+  - [ ] Design generation quality assurance
+
+- [ ] **Generation Analytics**
+  - [ ] Create generation distribution analysis
+  - [ ] Design generation balance monitoring
+  - [ ] Implement generation performance metrics
+  - [ ] Create generation optimization recommendations
+  - [ ] Design generation A/B testing framework
+
+---
+
+## 🔧 Advanced Generation Features
+
+### 7. Smart Generation System
+- [ ] **Player-Based Generation**
+  - [ ] Create generation based on player preferences
+  - [ ] Design generation based on player build needs
+  - [ ] Implement generation based on player progression
+  - [ ] Create generation based on player playstyle
+  - [ ] Design generation based on player feedback
+
+- [ ] **Adaptive Generation**
+  - [ ] Create generation that adapts to player performance
+  - [ ] Design generation that balances difficulty
+  - [ ] Implement generation that prevents bottlenecks
+  - [ ] Create generation that rewards exploration
+  - [ ] Design generation that encourages experimentation
+
+### 8. Generation Quality Control
+- [ ] **Quality Assurance**
+  - [ ] Create generation quality metrics
+  - [ ] Design generation quality monitoring
+  - [ ] Implement generation quality improvement
+  - [ ] Create generation quality reporting
+  - [ ] Design generation quality optimization
+
+- [ ] **Generation Testing**
+  - [ ] Create automated generation testing
+  - [ ] Design generation stress testing
+  - [ ] Implement generation load testing
+  - [ ] Create generation integration testing
+  - [ ] Design generation user acceptance testing
+
+### 9. Generation Customization
+- [ ] **Generation Settings**
+  - [ ] Create player-customizable generation settings
+  - [ ] Design generation difficulty adjustments
+  - [ ] Implement generation preference systems
+  - [ ] Create generation accessibility options
+  - [ ] Design generation personalization features
+
+- [ ] **Generation Modding Support**
+  - [ ] Create generation modding framework
+  - [ ] Design generation custom rules support
+  - [ ] Implement generation community features
+  - [ ] Create generation sharing and distribution
+  - [ ] Design generation versioning and compatibility
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Generation Engine (Week 1)
+- [ ] Basic generation algorithm working
+- [ ] Rarity-based affix limits implemented
+- [ ] Level scaling system complete
+- [ ] Boss/elite loot tables functional
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Seasonal/event modifiers implemented
+- [ ] Generation logging and analytics complete
+- [ ] Smart generation system working
+- [ ] Quality control measures in place
+
+### Milestone 3: Polish & Optimization (Week 3)
+- [ ] Generation performance optimized
+- [ ] Generation customization features complete
+- [ ] Comprehensive testing done
+- [ ] Documentation and guides complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Generation algorithm + Rarity limits
+- Level scaling + Boss loot tables
+- Seasonal modifiers + Generation logging
+- Smart generation + Quality control
+
+### Sequential Dependencies:
+- Rarity limits depend on generation algorithm
+- Level scaling depends on base generation
+- Advanced features depend on core systems
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] Generation engine creates balanced and interesting items
+- [ ] All rarity tiers provide appropriate rewards
+- [ ] Level scaling creates proper progression
+- [ ] Boss/elite monsters provide meaningful rewards
+- [ ] Generation performance meets requirements
+- [ ] System is easily tunable and modifiable
+
+---
+
+## 📝 Notes
+
+### Design Considerations:
+- Ensure generation creates engaging loot progression
+- Balance generation rates with player satisfaction
+- Create generation that rewards different playstyles
+- Design for both casual and hardcore players
+- Plan for long-term generation system evolution
+
+### Technical Considerations:
+- Use efficient algorithms for high-volume generation
+- Implement proper generation data validation
+- Design for easy generation system modifications
+- Consider generation data versioning and migration
+- Plan for generation system performance optimization
+
+### Balance Considerations:
+- Test generation rates and player satisfaction
+- Ensure no single generation type dominates
+- Balance generation with game progression
+- Consider generation economy and value scaling
+- Plan for generation system balance updates
