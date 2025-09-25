@@ -1,0 +1,198 @@
+# SubTaskList: Project Setup
+
+## Overview
+Initialize the web-based idle RPG project with modern development tools, version control, and CI/CD pipeline. This forms the foundation for all subsequent development work.
+
+## Dependencies
+- None (this is the starting point)
+
+## Prerequisites
+- Development environment setup
+- Git repository access
+- Node.js and npm/yarn installed
+- Code editor/IDE configured
+
+---
+
+## 🛠️ Core Setup Tasks
+
+### 1. Initialize Web Project
+- [ ] **Choose Frontend Framework**
+  - [ ] Research and select React/Vue/Angular based on team expertise
+  - [ ] Consider performance requirements for idle game mechanics
+  - [ ] Evaluate TypeScript support and ecosystem
+  - [ ] Create new project with selected framework
+  - [ ] Configure initial project structure
+
+- [ ] **Set Up Backend Infrastructure**
+  - [ ] Choose Node.js framework (Express.js/Fastify)
+  - [ ] Initialize backend project structure
+  - [ ] Set up API routing foundation
+  - [ ] Configure environment variables system
+  - [ ] Create basic server startup configuration
+
+### 2. Development Environment & Build Tools
+- [ ] **Package Management**
+  - [ ] Set up npm/yarn/pnpm workspace configuration
+  - [ ] Configure package.json with proper scripts
+  - [ ] Set up dependency management strategy
+  - [ ] Configure lock file handling
+  - [ ] Set up monorepo structure if needed
+
+- [ ] **Build System Configuration**
+  - [ ] Configure Webpack/Vite for frontend builds
+  - [ ] Set up TypeScript compilation
+  - [ ] Configure CSS/SCSS preprocessing
+  - [ ] Set up asset optimization (images, fonts)
+  - [ ] Configure source maps for debugging
+
+- [ ] **Development Tools**
+  - [ ] Set up ESLint with game-specific rules
+  - [ ] Configure Prettier for code formatting
+  - [ ] Set up Husky for git hooks
+  - [ ] Configure lint-staged for pre-commit checks
+  - [ ] Set up VS Code workspace settings
+
+### 3. Version Control & Branching Strategy
+- [ ] **Git Repository Setup**
+  - [ ] Initialize Git repository
+  - [ ] Create .gitignore for Node.js/web projects
+  - [ ] Set up remote repository (GitHub/GitLab)
+  - [ ] Configure branch protection rules
+  - [ ] Set up issue and PR templates
+
+- [ ] **Branching Strategy**
+  - [ ] Define GitFlow or GitHub Flow strategy
+  - [ ] Create main/develop branch structure
+  - [ ] Set up feature branch naming conventions
+  - [ ] Configure automated branch cleanup
+  - [ ] Document branching workflow for team
+
+### 4. CI/CD Pipeline Basics
+- [ ] **Continuous Integration**
+  - [ ] Set up GitHub Actions/GitLab CI
+  - [ ] Configure automated testing pipeline
+  - [ ] Set up code quality checks (linting, formatting)
+  - [ ] Configure security vulnerability scanning
+  - [ ] Set up build verification for PRs
+
+- [ ] **Continuous Deployment**
+  - [ ] Set up staging environment deployment
+  - [ ] Configure production deployment pipeline
+  - [ ] Set up environment-specific configurations
+  - [ ] Configure rollback procedures
+  - [ ] Set up deployment notifications
+
+### 5. Project Documentation Structure
+- [ ] **Documentation Framework**
+  - [ ] Choose documentation tool (GitBook/MkDocs/VitePress)
+  - [ ] Set up documentation site structure
+  - [ ] Create API documentation templates
+  - [ ] Set up automated documentation generation
+  - [ ] Configure documentation deployment
+
+- [ ] **Core Documentation**
+  - [ ] Create project README with setup instructions
+  - [ ] Document development workflow
+  - [ ] Create architecture overview
+  - [ ] Set up coding standards documentation
+  - [ ] Create contribution guidelines
+
+---
+
+## 🔧 Advanced Configuration
+
+### 6. Development Environment Optimization
+- [ ] **Hot Reload & Development Server**
+  - [ ] Configure hot module replacement
+  - [ ] Set up development proxy for API calls
+  - [ ] Configure development server with HTTPS
+  - [ ] Set up browser devtools integration
+  - [ ] Configure error overlay and debugging
+
+- [ ] **Performance Monitoring**
+  - [ ] Set up bundle analyzer
+  - [ ] Configure performance profiling tools
+  - [ ] Set up memory usage monitoring
+  - [ ] Configure network request monitoring
+  - [ ] Set up build time tracking
+
+### 7. Security & Code Quality
+- [ ] **Security Configuration**
+  - [ ] Set up dependency vulnerability scanning
+  - [ ] Configure security headers
+  - [ ] Set up secrets management
+  - [ ] Configure HTTPS in development
+  - [ ] Set up security linting rules
+
+- [ ] **Code Quality Tools**
+  - [ ] Set up SonarQube or similar
+  - [ ] Configure test coverage reporting
+  - [ ] Set up code complexity analysis
+  - [ ] Configure duplicate code detection
+  - [ ] Set up performance regression testing
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Basic Project Structure (Week 1)
+- [ ] Frontend and backend projects initialized
+- [ ] Basic build system working
+- [ ] Version control configured
+- [ ] Development environment functional
+
+### Milestone 2: CI/CD Pipeline (Week 2)
+- [ ] Automated testing pipeline
+- [ ] Code quality checks automated
+- [ ] Staging deployment working
+- [ ] Documentation site deployed
+
+### Milestone 3: Production Ready Setup (Week 3)
+- [ ] Production deployment pipeline
+- [ ] Security measures implemented
+- [ ] Performance monitoring configured
+- [ ] Team workflow documented
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Frontend framework setup + Backend framework setup
+- Build tools configuration + Version control setup
+- Documentation setup + CI/CD pipeline configuration
+- Security configuration + Code quality tools
+
+### Sequential Dependencies:
+- CI/CD pipeline depends on build system completion
+- Documentation depends on project structure
+- Security configuration depends on basic setup
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] Developer can clone repo and run project with single command
+- [ ] All code quality checks pass automatically
+- [ ] Staging environment deploys on every merge
+- [ ] Documentation is comprehensive and up-to-date
+- [ ] Security vulnerabilities are caught automatically
+- [ ] Performance benchmarks are established
+
+---
+
+## 📝 Notes
+
+### Technology Choices Considerations:
+- **Frontend**: React for component ecosystem, TypeScript for type safety
+- **Backend**: Express.js for simplicity, Fastify for performance
+- **Build**: Vite for fast development, Webpack for production optimization
+- **Testing**: Jest for unit tests, Cypress for E2E
+- **CI/CD**: GitHub Actions for integration with GitHub
+
+### Future Considerations:
+- Set up for easy migration to microservices
+- Plan for mobile app development
+- Consider internationalization from start
+- Plan for analytics and monitoring integration

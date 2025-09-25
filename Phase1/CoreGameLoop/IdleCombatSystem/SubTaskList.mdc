@@ -1,0 +1,250 @@
+# SubTaskList: Idle Combat System
+
+## Overview
+Design and implement the core idle combat system that drives the automated progression of the RPG game. This includes combat calculations, monster encounters, automated battle progression, and combat controls.
+
+## Dependencies
+- Backend API Foundation completed
+- Database Design completed (for combat data storage)
+
+## Prerequisites
+- Character progression system designed
+- Monster database populated
+- Combat calculation formulas defined
+
+---
+
+## ⚔️ Core Combat System Tasks
+
+### 1. Combat Calculation Engine
+- [ ] **Damage Calculation System**
+  - [ ] Implement base damage calculation (weapon damage + character stats)
+  - [ ] Create damage type system (physical, magical, elemental)
+  - [ ] Implement damage modifiers (critical hits, elemental resistance)
+  - [ ] Create damage over time (DoT) effects calculation
+  - [ ] Implement damage mitigation (armor, resistance, absorption)
+
+- [ ] **Defense & Resistance System**
+  - [ ] Create armor calculation system
+  - [ ] Implement elemental resistance mechanics
+  - [ ] Design damage reduction formulas
+  - [ ] Create status effect resistance system
+  - [ ] Implement block and dodge mechanics
+
+- [ ] **Attack Speed & Timing**
+  - [ ] Implement attack speed calculation based on weapon and stats
+  - [ ] Create attack timing system with intervals
+  - [ ] Design dual-wield attack speed mechanics
+  - [ ] Implement haste and slow effects
+  - [ ] Create attack speed scaling formulas
+
+### 2. Automated Battle Progression
+- [ ] **Combat Loop Implementation**
+  - [ ] Create main combat loop that runs automatically
+  - [ ] Implement turn-based combat with automatic progression
+  - [ ] Design combat state management (attacking, defending, idle)
+  - [ ] Create combat event system for actions and effects
+  - [ ] Implement combat logging for debugging and display
+
+- [ ] **Combat Actions System**
+  - [ ] Implement basic attack actions
+  - [ ] Create skill/spell casting system
+  - [ ] Design special ability activation
+  - [ ] Implement item usage during combat
+  - [ ] Create combat action queuing system
+
+- [ ] **Combat State Persistence**
+  - [ ] Save combat state to database
+  - [ ] Implement combat state recovery on server restart
+  - [ ] Create offline combat progression calculation
+  - [ ] Design combat state synchronization between client/server
+  - [ ] Implement combat state backup and recovery
+
+### 3. Monster Encounter Generation
+- [ ] **Monster Spawning System**
+  - [ ] Create monster spawn algorithms based on area and level
+  - [ ] Implement monster group spawning (multiple monsters)
+  - [ ] Design elite and boss monster spawning mechanics
+  - [ ] Create monster scaling based on character level
+  - [ ] Implement monster respawn timers and mechanics
+
+- [ ] **Encounter Difficulty Scaling**
+  - [ ] Create encounter difficulty calculation
+  - [ ] Implement dynamic monster stat scaling
+  - [ ] Design encounter reward scaling
+  - [ ] Create challenge rating system
+  - [ ] Implement adaptive difficulty based on player performance
+
+- [ ] **Special Encounter Types**
+  - [ ] Design boss encounter mechanics
+  - [ ] Create elite monster encounters
+  - [ ] Implement rare monster spawning
+  - [ ] Design event-based encounters
+  - [ ] Create seasonal encounter variations
+
+### 4. Combat Speed Controls
+- [ ] **Speed Multiplier System**
+  - [ ] Implement 1x, 2x, 4x speed multipliers
+  - [ ] Create auto-advance to next encounter
+  - [ ] Design speed unlock progression system
+  - [ ] Implement speed restrictions based on character level
+  - [ ] Create speed control UI components
+
+- [ ] **Auto-Advance Features**
+  - [ ] Implement auto-advance to next area
+  - [ ] Create auto-loot collection system
+  - [ ] Design auto-sell common items feature
+  - [ ] Implement auto-use consumables
+  - [ ] Create auto-equip better items feature
+
+### 5. Combat Pause/Resume Functionality
+- [ ] **Combat State Management**
+  - [ ] Implement combat pause functionality
+  - [ ] Create combat resume with state restoration
+  - [ ] Design offline combat progression calculation
+  - [ ] Implement combat state validation
+  - [ ] Create combat state error recovery
+
+- [ ] **Player Control Interface**
+  - [ ] Create pause/resume UI controls
+  - [ ] Implement emergency stop functionality
+  - [ ] Design combat override controls
+  - [ ] Create manual combat action triggers
+  - [ ] Implement combat priority settings
+
+### 6. Combat Statistics Tracking
+- [ ] **Combat Metrics Collection**
+  - [ ] Track damage dealt and received
+  - [ ] Record combat duration and efficiency
+  - [ ] Monitor critical hit rates and damage
+  - [ ] Track skill usage and effectiveness
+  - [ ] Record monster kill counts and types
+
+- [ ] **Performance Analytics**
+  - [ ] Calculate combat efficiency metrics
+  - [ ] Track progression speed and bottlenecks
+  - [ ] Monitor resource usage (mana, stamina)
+  - [ ] Analyze combat strategy effectiveness
+  - [ ] Create combat performance reports
+
+---
+
+## 🎮 Advanced Combat Features
+
+### 7. Combat Effects & Status System
+- [ ] **Status Effect System**
+  - [ ] Implement buff and debuff mechanics
+  - [ ] Create status effect duration and stacking
+  - [ ] Design status effect interaction rules
+  - [ ] Implement status effect removal mechanics
+  - [ ] Create status effect visual indicators
+
+- [ ] **Environmental Effects**
+  - [ ] Implement area-based combat modifiers
+  - [ ] Create weather effects on combat
+  - [ ] Design time-of-day combat variations
+  - [ ] Implement terrain-based combat mechanics
+  - [ ] Create environmental hazard systems
+
+### 8. Combat Balance & Tuning
+- [ ] **Balance Testing Framework**
+  - [ ] Create automated combat balance testing
+  - [ ] Implement combat simulation tools
+  - [ ] Design A/B testing for combat mechanics
+  - [ ] Create combat difficulty calibration tools
+  - [ ] Implement combat performance benchmarking
+
+- [ ] **Dynamic Balance Adjustment**
+  - [ ] Create real-time combat balance monitoring
+  - [ ] Implement automatic difficulty adjustment
+  - [ ] Design player feedback-based balancing
+  - [ ] Create combat metric analysis tools
+  - [ ] Implement balance hotfix deployment
+
+### 9. Combat UI & Feedback
+- [ ] **Real-time Combat Display**
+  - [ ] Create damage number animations
+  - [ ] Implement health bar updates
+  - [ ] Design combat log display
+  - [ ] Create visual effect system
+  - [ ] Implement combat sound effects
+
+- [ ] **Combat Information Display**
+  - [ ] Show current enemy information
+  - [ ] Display combat statistics in real-time
+  - [ ] Create combat progress indicators
+  - [ ] Implement combat notification system
+  - [ ] Design combat performance dashboard
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Basic Combat Loop (Week 1)
+- [ ] Combat calculation engine working
+- [ ] Basic automated combat progression
+- [ ] Simple monster encounters
+- [ ] Basic combat controls
+
+### Milestone 2: Advanced Combat Features (Week 2)
+- [ ] Combat speed controls implemented
+- [ ] Combat statistics tracking
+- [ ] Status effect system
+- [ ] Combat pause/resume functionality
+
+### Milestone 3: Combat Polish & Balance (Week 3)
+- [ ] Combat balance testing complete
+- [ ] Combat UI and feedback systems
+- [ ] Performance optimization
+- [ ] Combat documentation complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Damage calculation + Defense system
+- Combat loop + Monster spawning
+- Speed controls + Statistics tracking
+- Status effects + Environmental effects
+
+### Sequential Dependencies:
+- Combat progression depends on calculation engine
+- Advanced features depend on basic combat loop
+- UI systems depend on combat mechanics
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] Combat runs smoothly at 60 FPS with 1000+ concurrent battles
+- [ ] Combat calculations are accurate and balanced
+- [ ] Monster encounters provide appropriate challenge
+- [ ] Combat speed controls work reliably
+- [ ] Combat statistics are accurate and useful
+- [ ] Combat system is easily tunable and modifiable
+
+---
+
+## 📝 Notes
+
+### Performance Considerations:
+- Use efficient algorithms for combat calculations
+- Implement combat state caching where appropriate
+- Use database indexing for combat queries
+- Consider combat state compression for storage
+- Implement combat result batching for efficiency
+
+### Balance Considerations:
+- Design combat to be engaging but not overwhelming
+- Ensure progression feels rewarding
+- Balance active vs idle gameplay
+- Consider different player skill levels
+- Plan for long-term balance adjustments
+
+### Technical Considerations:
+- Use deterministic combat for consistency
+- Implement proper error handling for combat failures
+- Design for easy combat system testing
+- Consider combat replay functionality
+- Plan for combat system versioning and updates
