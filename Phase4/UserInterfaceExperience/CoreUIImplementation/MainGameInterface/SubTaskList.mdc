@@ -1,0 +1,94 @@
+# SubTaskList: Main Game Interface
+
+## Overview
+Design and implement the main game interface including combat display, character stats panel, inventory management interface, equipment comparison windows, progress bars, and tooltip systems.
+
+## Dependencies
+- Basic UI Framework completed
+- Combat System completed
+- Character Progression System completed
+
+## Prerequisites
+- UI/UX design system defined
+- Game interface wireframes created
+- Component library established
+
+---
+
+## 🎮 Core Game Interface Tasks
+
+### 1. Combat Display
+- [ ] **Combat UI Components**
+  - [ ] Create health and mana bars with smooth animations
+  - [ ] Design damage number display with floating text effects
+  - [ ] Implement combat log with filtering and customization
+  - [ ] Create ability cooldown indicators and cast bars
+  - [ ] Design enemy health bars and status indicators
+
+### 2. Character Stats Panel
+- [ ] **Stats Display System**
+  - [ ] Create comprehensive character stats display
+  - [ ] Design stat comparison and historical tracking
+  - [ ] Implement stat tooltips with detailed explanations
+  - [ ] Create stat modification tracking and effects
+  - [ ] Design stat visualization with charts and graphs
+
+### 3. Inventory Management Interface
+- [ ] **Inventory UI**
+  - [ ] Create grid-based inventory display with drag-and-drop
+  - [ ] Design item tooltips with detailed information
+  - [ ] Implement inventory sorting and filtering controls
+  - [ ] Create item comparison overlays and highlighting
+  - [ ] Design inventory expansion and organization tools
+
+### 4. Equipment Comparison Windows
+- [ ] **Comparison Interface**
+  - [ ] Create side-by-side equipment comparison display
+  - [ ] Design stat difference highlighting and indicators
+  - [ ] Implement equipment preview and try-on functionality
+  - [ ] Create equipment set bonus display and tracking
+  - [ ] Design equipment upgrade path visualization
+
+### 5. Progress Bars and Notifications
+- [ ] **Progress Display**
+  - [ ] Create experience and level progression bars
+  - [ ] Design achievement and milestone progress tracking
+  - [ ] Implement quest and objective progress indicators
+  - [ ] Create skill progression and mastery tracking
+  - [ ] Design prestige and seasonal progress displays
+
+### 6. Tooltip System
+- [ ] **Tooltip Framework**
+  - [ ] Create comprehensive tooltip system for all game elements
+  - [ ] Design tooltip positioning and collision detection
+  - [ ] Implement tooltip content formatting and styling
+  - [ ] Create tooltip animation and timing controls
+  - [ ] Design tooltip accessibility and keyboard navigation
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Interface (Week 1)
+- [ ] Combat display implemented
+- [ ] Character stats panel working
+- [ ] Basic inventory interface complete
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Equipment comparison functional
+- [ ] Progress tracking complete
+- [ ] Tooltip system working
+
+### Milestone 3: Polish & Optimization (Week 3)
+- [ ] UI polish and animations complete
+- [ ] Performance optimization done
+- [ ] Accessibility features implemented
+
+---
+
+## 🎯 Success Criteria
+- [ ] Interface is intuitive and easy to navigate
+- [ ] All game information is clearly displayed
+- [ ] UI performance meets 60 FPS requirements
+- [ ] Interface works well on different screen sizes
+- [ ] Accessibility features support all users

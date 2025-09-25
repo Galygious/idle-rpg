@@ -1,0 +1,279 @@
+# SubTaskList: Affix System
+
+## Overview
+Design and implement the comprehensive affix system that creates the random magical properties for items. This includes prefix/suffix pools, tier systems, roll ranges, conditional affixes, and conflict resolution - the core of the Diablo II-inspired loot generation.
+
+## Dependencies
+- Base Item System completed (for affix-item compatibility)
+- Database Design completed (for affix data storage)
+
+## Prerequisites
+- Item types defined
+- Stat system implemented
+- Affix categories planned
+
+---
+
+## ⚡ Core Affix System Tasks
+
+### 1. Affix Pool Design by Item Type
+- [ ] **Weapon Affix Pools**
+  - [ ] Create damage-based affixes (+X-Y damage, +X% damage)
+  - [ ] Design speed-based affixes (attack speed, swing speed)
+  - [ ] Implement critical hit affixes (crit chance, crit damage)
+  - [ ] Create elemental damage affixes (fire, cold, lightning, poison)
+  - [ ] Design weapon-specific affixes (reach, penetration, cleave)
+
+- [ ] **Armor Affix Pools**
+  - [ ] Create defense-based affixes (+X armor, +X% armor)
+  - [ ] Design resistance affixes (fire res, cold res, lightning res, poison res)
+  - [ ] Implement stat bonus affixes (+strength, +dexterity, +intelligence, +vitality)
+  - [ ] Create utility affixes (faster run/walk, reduced requirements)
+  - [ ] Design armor-specific affixes (block chance, block recovery)
+
+- [ ] **Accessory Affix Pools**
+  - [ ] Create skill-based affixes (+X to skill levels)
+  - [ ] Design resource affixes (+mana, +health, mana regen)
+  - [ ] Implement experience and progression affixes (+XP, +gold find)
+  - [ ] Create utility affixes (magic find, item find, durability)
+  - [ ] Design special ability affixes (life steal, mana steal, thorns)
+
+### 2. Affix Tier System (Tier 1-6)
+- [ ] **Tier Definition and Scaling**
+  - [ ] Design Tier 1 affixes (low level, small bonuses)
+  - [ ] Create Tier 2 affixes (mid level, moderate bonuses)
+  - [ ] Implement Tier 3 affixes (high level, good bonuses)
+  - [ ] Design Tier 4 affixes (very high level, strong bonuses)
+  - [ ] Create Tier 5 affixes (exceptional level, powerful bonuses)
+  - [ ] Implement Tier 6 affixes (legendary level, exceptional bonuses)
+
+- [ ] **Tier Availability System**
+  - [ ] Create tier availability based on item level
+  - [ ] Design tier availability based on character level
+  - [ ] Implement tier availability based on monster level
+  - [ ] Create tier availability based on area difficulty
+  - [ ] Design tier availability based on item rarity
+
+- [ ] **Tier Weight and Rarity**
+  - [ ] Implement tier-based weight modifiers
+  - [ ] Create tier-based drop rate adjustments
+  - [ ] Design tier-based cost and material requirements
+  - [ ] Implement tier-based identification requirements
+  - [ ] Create tier-based enhancement restrictions
+
+### 3. Affix Roll Ranges and Scaling
+- [ ] **Roll Range System**
+  - [ ] Create minimum and maximum roll values for each affix
+  - [ ] Design roll distribution curves (uniform, weighted, bell curve)
+  - [ ] Implement roll quality modifiers (normal, enhanced, perfect)
+  - [ ] Create roll-based value scaling
+  - [ ] Design roll-based rarity adjustments
+
+- [ ] **Scaling Formulas**
+  - [ ] Implement item level based roll scaling
+  - [ ] Create character level based roll scaling
+  - [ ] Design monster level based roll scaling
+  - [ ] Implement area difficulty based roll scaling
+  - [ ] Create rarity based roll scaling
+
+- [ ] **Roll Quality System**
+  - [ ] Design roll quality indicators (poor, normal, good, excellent, perfect)
+  - [ ] Create roll quality based visual effects
+  - [ ] Implement roll quality based value multipliers
+  - [ ] Design roll quality based enhancement bonuses
+  - [ ] Create roll quality based trading restrictions
+
+### 4. Conditional Affixes
+- [ ] **Class-Specific Affixes**
+  - [ ] Create warrior-specific affixes (barbarian skills, combat bonuses)
+  - [ ] Design mage-specific affixes (spell damage, mana efficiency)
+  - [ ] Implement rogue-specific affixes (stealth, critical hits)
+  - [ ] Create paladin-specific affixes (healing, defensive auras)
+  - [ ] Design necromancer-specific affixes (minion bonuses, dark magic)
+
+- [ ] **Level Requirement Affixes**
+  - [ ] Create level-gated affixes (requires level X)
+  - [ ] Design stat requirement affixes (requires X strength)
+  - [ ] Implement skill requirement affixes (requires X in skill)
+  - [ ] Create quest requirement affixes (requires quest completion)
+  - [ ] Design achievement requirement affixes (requires achievement)
+
+- [ ] **Situational Affixes**
+  - [ ] Create time-based affixes (bonus during day/night)
+  - [ ] Design location-based affixes (bonus in specific areas)
+  - [ ] Implement enemy-type based affixes (bonus vs undead)
+  - [ ] Create equipment-based affixes (bonus with specific items)
+  - [ ] Design health-based affixes (bonus at low health)
+
+### 5. Affix Conflict Resolution
+- [ ] **Mutually Exclusive Mods**
+  - [ ] Create affix conflict detection system
+  - [ ] Design conflict resolution rules and priorities
+  - [ ] Implement conflict prevention during generation
+  - [ ] Create conflict resolution for existing items
+  - [ ] Design conflict-based rerolling mechanics
+
+- [ ] **Affix Compatibility System**
+  - [ ] Create affix compatibility matrix
+  - [ ] Design compatibility-based generation rules
+  - [ ] Implement compatibility validation
+  - [ ] Create compatibility-based enhancement restrictions
+  - [ ] Design compatibility-based trading rules
+
+- [ ] **Conflict Resolution UI**
+  - [ ] Create conflict warning system for players
+  - [ ] Design conflict resolution interface
+  - [ ] Implement conflict-based item modification options
+  - [ ] Create conflict explanation and help system
+  - [ ] Design conflict-based item value adjustments
+
+### 6. Affix Weight Balancing System
+- [ ] **Weight Calculation System**
+  - [ ] Create base weight values for all affixes
+  - [ ] Design weight modifiers based on item type
+  - [ ] Implement weight modifiers based on rarity
+  - [ ] Create weight modifiers based on level
+  - [ ] Design weight modifiers based on balance requirements
+
+- [ ] **Dynamic Weight Adjustment**
+  - [ ] Implement real-time weight monitoring
+  - [ ] Create automatic weight adjustment algorithms
+  - [ ] Design player feedback based weight changes
+  - [ ] Implement balance-based weight modifications
+  - [ ] Create weight adjustment testing and validation
+
+- [ ] **Weight Analytics and Reporting**
+  - [ ] Create affix generation analytics
+  - [ ] Design affix distribution reporting
+  - [ ] Implement affix balance monitoring
+  - [ ] Create affix performance tracking
+  - [ ] Design affix optimization recommendations
+
+---
+
+## 🔧 Advanced Affix Features
+
+### 7. Special Affix Types
+- [ ] **Percentage vs Flat Affixes**
+  - [ ] Create percentage-based affixes (+X% damage)
+  - [ ] Design flat value affixes (+X damage)
+  - [ ] Implement hybrid affixes (X-Y damage + Z% damage)
+  - [ ] Create conditional percentage affixes
+  - [ ] Design scaling percentage affixes
+
+- [ ] **Compound Affixes**
+  - [ ] Create multi-stat affixes (+X strength and +Y dexterity)
+  - [ ] Design conditional multi-affixes
+  - [ ] Implement progressive affixes (bonus increases over time)
+  - [ ] Create synergistic affixes (bonus when combined with others)
+  - [ ] Design evolving affixes (change based on conditions)
+
+- [ ] **Unique Affix Effects**
+  - [ ] Create special ability affixes (teleport, invisibility)
+  - [ ] Design transformation affixes (shape-shifting)
+  - [ ] Implement environmental affixes (create light, detect traps)
+  - [ ] Create social affixes (bonus with party members)
+  - [ ] Design economic affixes (vendor discounts, trading bonuses)
+
+### 8. Affix Generation Engine
+- [ ] **Generation Algorithms**
+  - [ ] Create weighted random selection algorithms
+  - [ ] Design tier-based generation logic
+  - [ ] Implement conflict resolution during generation
+  - [ ] Create quality-based generation modifiers
+  - [ ] Design special generation events and bonuses
+
+- [ ] **Generation Optimization**
+  - [ ] Implement efficient generation algorithms
+  - [ ] Create generation caching and precomputation
+  - [ ] Design batch generation for performance
+  - [ ] Implement generation result validation
+  - [ ] Create generation debugging and logging
+
+### 9. Affix Testing and Balance
+- [ ] **Automated Testing**
+  - [ ] Create affix generation test suites
+  - [ ] Design affix balance validation tests
+  - [ ] Implement affix performance benchmarks
+  - [ ] Create affix regression testing
+  - [ ] Design affix integration testing
+
+- [ ] **Balance Analysis Tools**
+  - [ ] Create affix distribution analysis tools
+  - [ ] Design affix power level calculators
+  - [ ] Implement affix balance reporting
+  - [ ] Create affix optimization suggestions
+  - [ ] Design affix A/B testing framework
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Affix System (Week 1)
+- [ ] All affix pools defined and categorized
+- [ ] Tier system implemented and working
+- [ ] Roll ranges and scaling complete
+- [ ] Basic conflict resolution functional
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Conditional affixes system complete
+- [ ] Weight balancing system working
+- [ ] Special affix types implemented
+- [ ] Generation engine optimized
+
+### Milestone 3: Balance & Testing (Week 3)
+- [ ] Affix balance testing complete
+- [ ] Performance optimization done
+- [ ] Documentation and guides complete
+- [ ] System ready for integration
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Affix pool design + Tier system
+- Roll ranges + Conditional affixes
+- Conflict resolution + Weight balancing
+- Special affixes + Generation engine
+
+### Sequential Dependencies:
+- Tier system depends on affix pool design
+- Conflict resolution depends on affix definitions
+- Generation engine depends on all core systems
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] Affix system creates diverse and interesting items
+- [ ] All affix types are balanced and useful
+- [ ] Conflict resolution works reliably
+- [ ] Generation performance meets requirements
+- [ ] Affix system is easily tunable and modifiable
+- [ ] System provides good gameplay variety
+
+---
+
+## 📝 Notes
+
+### Design Considerations:
+- Ensure affix variety without overwhelming players
+- Balance affix power with game progression
+- Create meaningful choices in affix selection
+- Design for both casual and hardcore players
+- Plan for long-term affix system evolution
+
+### Technical Considerations:
+- Use efficient algorithms for affix generation
+- Implement proper affix data validation
+- Design for easy affix system modifications
+- Consider affix data versioning and migration
+- Plan for affix system performance optimization
+
+### Balance Considerations:
+- Test affix distribution and player satisfaction
+- Ensure no single affix type dominates gameplay
+- Balance affix power with item progression
+- Consider affix economy and value scaling
+- Plan for affix system balance updates

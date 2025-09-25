@@ -1,0 +1,285 @@
+# SubTaskList: Basic UI Framework
+
+## Overview
+Create the foundational UI framework for the idle RPG game, including responsive layout system, navigation, modals, state management, and reusable components. This provides the user interface foundation for all game features.
+
+## Dependencies
+- Project Setup completed (for UI framework setup)
+- Backend API Foundation completed (for UI data integration)
+
+## Prerequisites
+- Frontend framework chosen (React/Vue/Angular)
+- UI/UX design system planned
+- Component library requirements defined
+
+---
+
+## 🎨 Core UI Framework Tasks
+
+### 1. Responsive Layout System
+- [ ] **Layout Architecture**
+  - [ ] Design main application layout structure
+  - [ ] Create responsive grid system (mobile, tablet, desktop)
+  - [ ] Implement flexible container and wrapper components
+  - [ ] Design sidebar and main content area layouts
+  - [ ] Create header and footer layout components
+
+- [ ] **Responsive Design Implementation**
+  - [ ] Set up CSS Grid and Flexbox layouts
+  - [ ] Implement responsive breakpoints (mobile, tablet, desktop)
+  - [ ] Create adaptive component sizing
+  - [ ] Design touch-friendly interface elements
+  - [ ] Implement responsive typography scaling
+
+- [ ] **Layout Components**
+  - [ ] Create Container component with responsive padding
+  - [ ] Design Row and Column components for grid layouts
+  - [ ] Implement Stack component for vertical/horizontal layouts
+  - [ ] Create Spacer component for consistent spacing
+  - [ ] Design AspectRatio component for consistent proportions
+
+### 2. Navigation Menu Structure
+- [ ] **Main Navigation System**
+  - [ ] Design primary navigation menu structure
+  - [ ] Create navigation item components (links, dropdowns, icons)
+  - [ ] Implement active state management for navigation
+  - [ ] Design breadcrumb navigation system
+  - [ ] Create navigation accessibility features (keyboard, screen reader)
+
+- [ ] **Mobile Navigation**
+  - [ ] Implement hamburger menu for mobile devices
+  - [ ] Create slide-out navigation drawer
+  - [ ] Design touch-friendly navigation elements
+  - [ ] Implement navigation state management for mobile
+  - [ ] Create mobile-specific navigation animations
+
+- [ ] **Game-Specific Navigation**
+  - [ ] Create game section navigation (combat, inventory, character, etc.)
+  - [ ] Design quick access navigation shortcuts
+  - [ ] Implement navigation breadcrumbs for game progression
+  - [ ] Create navigation state persistence
+  - [ ] Design navigation customization options
+
+### 3. Modal and Popup Systems
+- [ ] **Modal Component Framework**
+  - [ ] Create base Modal component with backdrop and animations
+  - [ ] Implement modal stacking and z-index management
+  - [ ] Design modal sizing and positioning system
+  - [ ] Create modal accessibility features (focus trap, escape key)
+  - [ ] Implement modal state management and lifecycle
+
+- [ ] **Popup and Tooltip System**
+  - [ ] Create Tooltip component with positioning and timing
+  - [ ] Design Popover component for contextual information
+  - [ ] Implement Dropdown component for selections
+  - [ ] Create Toast notification system
+  - [ ] Design Confirmation dialog components
+
+- [ ] **Game-Specific Modals**
+  - [ ] Create inventory management modal
+  - [ ] Design character progression modal
+  - [ ] Implement settings and options modal
+  - [ ] Create help and tutorial modal system
+  - [ ] Design achievement and notification modals
+
+### 4. State Management Setup
+- [ ] **State Management Architecture**
+  - [ ] Set up Redux/Vuex/Zustand state management
+  - [ ] Design application state structure and organization
+  - [ ] Create state slices for different game features
+  - [ ] Implement state persistence and hydration
+  - [ ] Set up state debugging and development tools
+
+- [ ] **Game State Management**
+  - [ ] Create character state management
+  - [ ] Design inventory state management
+  - [ ] Implement combat state management
+  - [ ] Create UI state management (modals, notifications)
+  - [ ] Design settings and preferences state management
+
+- [ ] **State Synchronization**
+  - [ ] Implement client-server state synchronization
+  - [ ] Create optimistic updates for better UX
+  - [ ] Design conflict resolution for concurrent updates
+  - [ ] Implement state validation and error handling
+  - [ ] Create state backup and recovery mechanisms
+
+### 5. Reusable UI Components
+- [ ] **Form Components**
+  - [ ] Create Input component with validation and styling
+  - [ ] Design Button component with variants and states
+  - [ ] Implement Select/Dropdown component
+  - [ ] Create Checkbox and Radio button components
+  - [ ] Design Slider and Range input components
+
+- [ ] **Display Components**
+  - [ ] Create Card component for content containers
+  - [ ] Design Badge component for labels and status
+  - [ ] Implement Progress bar component
+  - [ ] Create Avatar component for character display
+  - [ ] Design Icon component system
+
+- [ ] **Interactive Components**
+  - [ ] Create Tabs component for content organization
+  - [ ] Design Accordion component for collapsible content
+  - [ ] Implement Drag and Drop components
+  - [ ] Create Sortable list components
+  - [ ] Design Resizable panel components
+
+### 6. Theme System Implementation
+- [ ] **Design System Foundation**
+  - [ ] Create color palette and color system
+  - [ ] Design typography scale and font system
+  - [ ] Implement spacing and sizing scales
+  - [ ] Create shadow and elevation system
+  - [ ] Design border radius and corner system
+
+- [ ] **Light/Dark Mode Implementation**
+  - [ ] Create theme switching mechanism
+  - [ ] Implement theme persistence in user preferences
+  - [ ] Design smooth theme transition animations
+  - [ ] Create theme-aware component variants
+  - [ ] Implement system theme detection and following
+
+- [ ] **Customization System**
+  - [ ] Create theme customization options
+  - [ ] Implement user-defined color schemes
+  - [ ] Design accessibility-focused theme variants
+  - [ ] Create theme preview and testing tools
+  - [ ] Implement theme sharing and export functionality
+
+---
+
+## 🎮 Game-Specific UI Components
+
+### 7. Game Interface Components
+- [ ] **Combat Interface Components**
+  - [ ] Create health and mana bar components
+  - [ ] Design damage number display components
+  - [ ] Implement combat log and message components
+  - [ ] Create ability cooldown and cast bar components
+  - [ ] Design enemy health and status components
+
+- [ ] **Character Interface Components**
+  - [ ] Create character stats display components
+  - [ ] Design skill tree visualization components
+  - [ ] Implement equipment slot components
+  - [ ] Create character portrait and avatar components
+  - [ ] Design character progression indicators
+
+- [ ] **Inventory Interface Components**
+  - [ ] Create inventory grid and slot components
+  - [ ] Design item tooltip and description components
+  - [ ] Implement drag and drop for item management
+  - [ ] Create item comparison and filtering components
+  - [ ] Design item sorting and organization components
+
+### 8. Data Display Components
+- [ ] **Statistics and Analytics Components**
+  - [ ] Create chart and graph components for game data
+  - [ ] Design progress tracking and milestone components
+  - [ ] Implement leaderboard and ranking components
+  - [ ] Create achievement and badge display components
+  - [ ] Design performance metrics visualization
+
+- [ ] **Information Display Components**
+  - [ ] Create tooltip system for game information
+  - [ ] Design help text and guidance components
+  - [ ] Implement notification and alert components
+  - [ ] Create loading and skeleton components
+  - [ ] Design error and empty state components
+
+### 9. Interactive Game Components
+- [ ] **Game Control Components**
+  - [ ] Create speed control and auto-play components
+  - [ ] Design combat control and override components
+  - [ ] Implement setting and preference components
+  - [ ] Create save and load game components
+  - [ ] Design game state management components
+
+- [ ] **Social and Community Components**
+  - [ ] Create friend list and social components
+  - [ ] Design guild and group management components
+  - [ ] Implement chat and communication components
+  - [ ] Create sharing and export components
+  - [ ] Design community features and interactions
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core UI Framework (Week 1)
+- [ ] Responsive layout system complete
+- [ ] Navigation structure implemented
+- [ ] Modal and popup systems working
+- [ ] State management setup complete
+
+### Milestone 2: Component Library (Week 2)
+- [ ] Reusable UI components implemented
+- [ ] Theme system functional
+- [ ] Game-specific components created
+- [ ] Component documentation complete
+
+### Milestone 3: UI Polish & Integration (Week 3)
+- [ ] All components integrated and tested
+- [ ] Accessibility features implemented
+- [ ] Performance optimization complete
+- [ ] UI testing suite complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Layout system + Navigation structure
+- Modal system + State management
+- Reusable components + Theme system
+- Game components + Data display components
+
+### Sequential Dependencies:
+- State management depends on layout system
+- Game components depend on reusable components
+- Advanced features depend on core framework
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] UI framework is responsive and works on all devices
+- [ ] All components are accessible and keyboard navigable
+- [ ] State management is efficient and reliable
+- [ ] Theme system allows for easy customization
+- [ ] Component library is comprehensive and reusable
+- [ ] UI performance meets 60 FPS requirements
+
+---
+
+## 📝 Notes
+
+### Design System Considerations:
+- Follow consistent design principles throughout
+- Create comprehensive component documentation
+- Design for accessibility from the start
+- Plan for internationalization and localization
+- Consider mobile-first design approach
+
+### Performance Considerations:
+- Use efficient rendering techniques
+- Implement proper component memoization
+- Optimize bundle size with code splitting
+- Use lazy loading for heavy components
+- Implement proper error boundaries
+
+### Accessibility Considerations:
+- Follow WCAG 2.1 AA guidelines
+- Implement proper ARIA labels and roles
+- Ensure keyboard navigation works throughout
+- Support screen readers and assistive technologies
+- Test with real users and accessibility tools
+
+### Technical Considerations:
+- Use TypeScript for type safety
+- Implement proper component testing
+- Create component storybook for documentation
+- Use CSS-in-JS or CSS modules for styling
+- Plan for component versioning and updates

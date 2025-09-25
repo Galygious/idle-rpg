@@ -1,0 +1,272 @@
+# SubTaskList: Unique Items
+
+## Overview
+Design and implement the unique item system that creates special items with fixed properties, unique abilities, and special drop conditions. This includes unique item concepts, special abilities, drop mechanics, lore integration, and visual effects - the crown jewels of the Diablo II-inspired loot system.
+
+## Dependencies
+- Base Item System completed
+- Item Generation Engine completed
+- Database Design completed (for unique item storage)
+
+## Prerequisites
+- Unique item concepts designed
+- Special ability system planned
+- Drop condition mechanics defined
+
+---
+
+## 👑 Core Unique Item System Tasks
+
+### 1. Unique Item Concepts and Themes
+- [ ] **Unique Item Categories**
+  - [ ] Create legendary weapons with unique properties
+  - [ ] Design mythical armor pieces with special abilities
+  - [ ] Implement ancient artifacts with powerful effects
+  - [ ] Create divine relics with godly powers
+  - [ ] Design cursed items with powerful but dangerous effects
+
+- [ ] **Unique Item Themes**
+  - [ ] Create elemental-themed uniques (fire, ice, lightning, earth)
+  - [ ] Design nature-themed uniques (animals, plants, seasons)
+  - [ ] Implement celestial-themed uniques (stars, planets, cosmic)
+  - [ ] Create dark-themed uniques (shadow, death, corruption)
+  - [ ] Design holy-themed uniques (light, purity, divine power)
+
+- [ ] **Unique Item Lore and Stories**
+  - [ ] Create unique item backstories and legends
+  - [ ] Design unique item creation myths and histories
+  - [ ] Implement unique item character connections
+  - [ ] Create unique item world-building integration
+  - [ ] Design unique item quest and event connections
+
+### 2. Unique Item Special Abilities
+- [ ] **Combat Abilities**
+  - [ ] Create unique combat mechanics (special attacks, abilities)
+  - [ ] Design unique defensive abilities (shields, immunities, absorption)
+  - [ ] Implement unique offensive abilities (enhanced damage, special effects)
+  - [ ] Create unique utility abilities (movement, resource management)
+  - [ ] Design unique transformation abilities (shape-shifting, empowerment)
+
+- [ ] **Passive Effects**
+  - [ ] Create unique passive bonuses (stat multipliers, special effects)
+  - [ ] Design unique environmental effects (area modifications, weather)
+  - [ ] Implement unique interaction effects (NPC reactions, world changes)
+  - [ ] Create unique economic effects (vendor prices, trading bonuses)
+  - [ ] Design unique social effects (party bonuses, guild benefits)
+
+- [ ] **Special Mechanics**
+  - [ ] Create unique item-specific mechanics (charging, cooldowns)
+  - [ ] Design unique item interactions with other items
+  - [ ] Implement unique item evolution and growth
+  - [ ] Create unique item awakening and mastery systems
+  - [ ] Design unique item combination and fusion mechanics
+
+### 3. Unique Item Drop Conditions
+- [ ] **Boss and Elite Drops**
+  - [ ] Create boss-specific unique item drops
+  - [ ] Design elite monster unique item chances
+  - [ ] Implement raid boss unique item guarantees
+  - [ ] Create world boss unique item exclusive drops
+  - [ ] Design event boss unique item special rewards
+
+- [ ] **Area and Location Drops**
+  - [ ] Create area-specific unique item drops
+  - [ ] Design dungeon-specific unique item rewards
+  - [ ] Implement zone-specific unique item exclusives
+  - [ ] Create environmental unique item drops
+  - [ ] Design hidden location unique item discoveries
+
+- [ ] **Conditional Drops**
+  - [ ] Create quest completion unique item rewards
+  - [ ] Design achievement-based unique item unlocks
+  - [ ] Implement time-based unique item availability
+  - [ ] Create seasonal unique item exclusive drops
+  - [ ] Design event-based unique item special rewards
+
+### 4. Unique Item Lore and Descriptions
+- [ ] **Lore Integration**
+  - [ ] Create comprehensive unique item lore database
+  - [ ] Design unique item story integration with game world
+  - [ ] Implement unique item character and NPC connections
+  - [ ] Create unique item historical significance
+  - [ ] Design unique item cultural and religious importance
+
+- [ ] **Description System**
+  - [ ] Create unique item detailed descriptions
+  - [ ] Design unique item flavor text and quotes
+  - [ ] Implement unique item stat explanations
+  - [ ] Create unique item ability descriptions
+  - [ ] Design unique item usage instructions and tips
+
+- [ ] **Lore Discovery**
+  - [ ] Create unique item lore discovery mechanics
+  - [ ] Design unique item lore collection system
+  - [ ] Implement unique item lore sharing features
+  - [ ] Create unique item lore achievement system
+  - [ ] Design unique item lore community features
+
+### 5. Unique Item Visual Effects
+- [ ] **Visual Identity System**
+  - [ ] Create unique item distinctive visual designs
+  - [ ] Design unique item particle effects and animations
+  - [ ] Implement unique item glow and aura effects
+  - [ ] Create unique item sound effects and audio cues
+  - [ ] Design unique item visual feedback for abilities
+
+- [ ] **Special Effects**
+  - [ ] Create unique item transformation visual effects
+  - [ ] Design unique item ability activation visuals
+  - [ ] Implement unique item environmental visual changes
+  - [ ] Create unique item interaction visual feedback
+  - [ ] Design unique item mastery and evolution visuals
+
+- [ ] **Visual Customization**
+  - [ ] Create unique item appearance customization options
+  - [ ] Design unique item visual enhancement systems
+  - [ ] Implement unique item visual upgrade paths
+  - [ ] Create unique item visual combination effects
+  - [ ] Design unique item visual sharing and showcase features
+
+### 6. Unique Item Rarity Scaling
+- [ ] **Rarity Tiers**
+  - [ ] Create common unique items (easier to find, basic abilities)
+  - [ ] Design rare unique items (moderate rarity, good abilities)
+  - [ ] Implement legendary unique items (very rare, powerful abilities)
+  - [ ] Create mythical unique items (extremely rare, game-changing abilities)
+  - [ ] Design divine unique items (ultra-rare, world-altering abilities)
+
+- [ ] **Rarity Scaling System**
+  - [ ] Create rarity-based power scaling
+  - [ ] Design rarity-based drop rate scaling
+  - [ ] Implement rarity-based requirement scaling
+  - [ ] Create rarity-based enhancement scaling
+  - [ ] Design rarity-based trading value scaling
+
+- [ ] **Rarity Balance**
+  - [ ] Create rarity balance monitoring system
+  - [ ] Design rarity adjustment algorithms
+  - [ ] Implement rarity feedback collection
+  - [ ] Create rarity optimization recommendations
+  - [ ] Design rarity A/B testing framework
+
+---
+
+## 🔧 Advanced Unique Item Features
+
+### 7. Unique Item Enhancement and Evolution
+- [ ] **Enhancement System**
+  - [ ] Create unique item level upgrading system
+  - [ ] Design unique item stat enhancement mechanics
+  - [ ] Implement unique item ability improvement system
+  - [ ] Create unique item special material requirements
+  - [ ] Design unique item enhancement success/failure mechanics
+
+- [ ] **Evolution System**
+  - [ ] Create unique item evolution paths and stages
+  - [ ] Design unique item transformation mechanics
+  - [ ] Implement unique item awakening and mastery systems
+  - [ ] Create unique item combination and fusion mechanics
+  - [ ] Design unique item legacy and inheritance systems
+
+### 8. Unique Item Analytics and Balance
+- [ ] **Performance Tracking**
+  - [ ] Create unique item usage analytics
+  - [ ] Design unique item performance metrics
+  - [ ] Implement unique item balance monitoring
+  - [ ] Create unique item optimization recommendations
+  - [ ] Design unique item A/B testing framework
+
+- [ ] **Community Features**
+  - [ ] Create unique item sharing and showcase system
+  - [ ] Design unique item build guides and recommendations
+  - [ ] Implement unique item community voting and rating
+  - [ ] Create unique item trading community features
+  - [ ] Design unique item achievement and leaderboard systems
+
+### 9. Unique Item Seasonal and Event Integration
+- [ ] **Seasonal Unique Items**
+  - [ ] Create seasonal unique item themes and abilities
+  - [ ] Design seasonal unique item availability and rotation
+  - [ ] Implement seasonal unique item special effects
+  - [ ] Create seasonal unique item collection rewards
+  - [ ] Design seasonal unique item legacy and preservation
+
+- [ ] **Event-Based Unique Items**
+  - [ ] Create event-specific unique items and abilities
+  - [ ] Design event unique item participation rewards
+  - [ ] Implement event unique item collaboration features
+  - [ ] Create event unique item competitive elements
+  - [ ] Design event unique item community challenges
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Unique System (Week 1)
+- [ ] Unique item concepts and themes defined
+- [ ] Special abilities system implemented
+- [ ] Drop conditions system working
+- [ ] Basic lore integration complete
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Visual effects system complete
+- [ ] Rarity scaling system implemented
+- [ ] Enhancement system working
+- [ ] Analytics and balance tools functional
+
+### Milestone 3: Polish & Integration (Week 3)
+- [ ] Seasonal/event integration complete
+- [ ] Community features implemented
+- [ ] Performance optimization done
+- [ ] Documentation and guides complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Unique concepts + Special abilities
+- Drop conditions + Lore integration
+- Visual effects + Rarity scaling
+- Enhancement system + Analytics tools
+
+### Sequential Dependencies:
+- Special abilities depend on unique concepts
+- Visual effects depend on special abilities
+- Advanced features depend on core systems
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] Unique items feel special and powerful
+- [ ] Special abilities are balanced and engaging
+- [ ] Drop conditions create meaningful goals
+- [ ] Lore integration enhances world immersion
+- [ ] Visual effects are impressive and clear
+- [ ] System provides long-term collection goals
+
+---
+
+## 📝 Notes
+
+### Design Considerations:
+- Ensure unique items feel truly unique and special
+- Balance unique item power with game progression
+- Create unique items that appeal to different playstyles
+- Design for both casual and hardcore players
+- Plan for long-term unique item system evolution
+
+### Technical Considerations:
+- Use efficient algorithms for unique item generation
+- Implement proper unique item data validation
+- Design for easy unique item system modifications
+- Consider unique item data versioning and migration
+- Plan for unique item system performance optimization
+
+### Balance Considerations:
+- Test unique item drop rates and player satisfaction
+- Ensure no single unique item dominates gameplay
+- Balance unique item power with progression systems
+- Consider unique item economy and trading dynamics
+- Plan for unique item system balance updates

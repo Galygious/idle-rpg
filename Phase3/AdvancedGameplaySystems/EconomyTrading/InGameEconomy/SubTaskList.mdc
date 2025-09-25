@@ -1,0 +1,94 @@
+# SubTaskList: In-Game Economy
+
+## Overview
+Design and implement the in-game economy system including currency system, vendor system, auction house/marketplace, item value calculation, inflation control, and economic event systems.
+
+## Dependencies
+- Item System completed
+- Player System completed
+- Trading System designed
+
+## Prerequisites
+- Currency types defined
+- Economic balance parameters set
+- Trading mechanics planned
+
+---
+
+## 💰 Core Economy System Tasks
+
+### 1. Currency System
+- [ ] **Currency Types**
+  - [ ] Create primary currency (gold) with earning and spending mechanics
+  - [ ] Design premium currency (gems) for special purchases
+  - [ ] Implement token currency (event rewards, achievements)
+  - [ ] Create resource currency (crafting materials, components)
+  - [ ] Design reputation currency (faction standing, vendor relations)
+
+### 2. Vendor System
+- [ ] **Vendor Mechanics**
+  - [ ] Create vendor inventory and restocking systems
+  - [ ] Design vendor pricing and negotiation mechanics
+  - [ ] Implement vendor reputation and relationship systems
+  - [ ] Create vendor-specific items and exclusives
+  - [ ] Design vendor location and accessibility
+
+### 3. Auction House/Marketplace
+- [ ] **Trading Platform**
+  - [ ] Create auction house listing and bidding mechanics
+  - [ ] Design marketplace buy/sell functionality
+  - [ ] Implement trading fees and commission systems
+  - [ ] Create trading security and fraud prevention
+  - [ ] Design trading analytics and market insights
+
+### 4. Item Value Calculation
+- [ ] **Value System**
+  - [ ] Create item value calculation algorithms
+  - [ ] Design market-based value adjustments
+  - [ ] Implement supply and demand mechanics
+  - [ ] Create item rarity-based value scaling
+  - [ ] Design item condition-based value modifiers
+
+### 5. Inflation Control
+- [ ] **Economic Balance**
+  - [ ] Create currency sink mechanics and systems
+  - [ ] Design inflation monitoring and adjustment tools
+  - [ ] Implement economic event and intervention systems
+  - [ ] Create player spending incentive programs
+  - [ ] Design economic stability and sustainability measures
+
+### 6. Economic Events
+- [ ] **Event System**
+  - [ ] Create economic event types and triggers
+  - [ ] Design event-based market fluctuations
+  - [ ] Implement seasonal economic variations
+  - [ ] Create economic crisis and recovery mechanics
+  - [ ] Design economic event rewards and consequences
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Economy (Week 1)
+- [ ] Currency system implemented
+- [ ] Vendor system working
+- [ ] Basic trading platform complete
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Auction house functional
+- [ ] Value calculation system working
+- [ ] Inflation control measures implemented
+
+### Milestone 3: Events & Balance (Week 3)
+- [ ] Economic events system complete
+- [ ] Balance testing and optimization done
+- [ ] Documentation complete
+
+---
+
+## 🎯 Success Criteria
+- [ ] Economy system is balanced and sustainable
+- [ ] Trading provides meaningful player interaction
+- [ ] Inflation is controlled and manageable
+- [ ] Economic events create dynamic gameplay
+- [ ] System supports long-term economic health

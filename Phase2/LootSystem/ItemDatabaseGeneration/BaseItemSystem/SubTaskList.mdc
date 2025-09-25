@@ -1,0 +1,273 @@
+# SubTaskList: Base Item System
+
+## Overview
+Design and implement the foundational item system that defines item types, base stats, rarity tiers, and core item mechanics. This forms the base layer for all item generation and management in the Diablo II-inspired loot system.
+
+## Dependencies
+- Database Design completed (for item data storage)
+- Backend API Foundation completed (for item management)
+
+## Prerequisites
+- Item type categories defined
+- Rarity system designed
+- Item level scaling planned
+
+---
+
+## 🗡️ Core Item System Tasks
+
+### 1. Item Type Definitions
+- [ ] **Weapon Categories**
+  - [ ] Design sword types (short sword, long sword, great sword)
+  - [ ] Create axe types (hand axe, battle axe, two-handed axe)
+  - [ ] Implement mace types (club, mace, war hammer)
+  - [ ] Design polearm types (spear, halberd, pike)
+  - [ ] Create bow and crossbow types
+  - [ ] Implement throwing weapon types (dagger, throwing axe, javelin)
+
+- [ ] **Armor Categories**
+  - [ ] Design helmet types (cap, helm, crown)
+  - [ ] Create chest armor types (leather, chain mail, plate armor)
+  - [ ] Implement glove types (gloves, gauntlets, bracers)
+  - [ ] Design boot types (boots, greaves, sandals)
+  - [ ] Create belt types (sash, belt, plated belt)
+  - [ ] Implement shield types (buckler, shield, tower shield)
+
+- [ ] **Accessory Categories**
+  - [ ] Design ring types (gold ring, silver ring, magic ring)
+  - [ ] Create amulet types (amulet, talisman, medallion)
+  - [ ] Implement charm types (small charm, large charm, grand charm)
+  - [ ] Design gem types (chipped, flawed, normal, flawless, perfect)
+  - [ ] Create rune types (basic runes, advanced runes, high runes)
+
+### 2. Item Base Stats and Requirements
+- [ ] **Base Stat Definitions**
+  - [ ] Define damage ranges for all weapon types
+  - [ ] Create armor rating values for all armor pieces
+  - [ ] Implement attack speed values for weapons
+  - [ ] Design durability values for all item types
+  - [ ] Create weight values for inventory management
+
+- [ ] **Requirement Systems**
+  - [ ] Implement level requirements for item usage
+  - [ ] Create stat requirements (strength, dexterity, intelligence)
+  - [ ] Design class-specific item restrictions
+  - [ ] Implement item type restrictions (weapon vs armor)
+  - [ ] Create special requirement conditions
+
+- [ ] **Item Properties**
+  - [ ] Define item size and inventory space requirements
+  - [ ] Create item quality indicators
+  - [ ] Implement item condition and wear states
+  - [ ] Design item identification states
+  - [ ] Create item binding and ownership systems
+
+### 3. Item Level Scaling
+- [ ] **Level Scaling System**
+  - [ ] Implement item level (ilvl) calculation system
+  - [ ] Create monster level to item level conversion
+  - [ ] Design area level to item level scaling
+  - [ ] Implement character level influence on item level
+  - [ ] Create item level cap and floor systems
+
+- [ ] **Stat Scaling Formulas**
+  - [ ] Design damage scaling based on item level
+  - [ ] Create armor rating scaling formulas
+  - [ ] Implement stat requirement scaling
+  - [ ] Design durability scaling with level
+  - [ ] Create value scaling for vendor prices
+
+- [ ] **Level-Based Restrictions**
+  - [ ] Implement minimum level requirements
+  - [ ] Create maximum effective level caps
+  - [ ] Design level-based affix availability
+  - [ ] Implement level-based drop rate modifiers
+  - [ ] Create level-based enhancement limits
+
+### 4. Item Rarity System
+- [ ] **Rarity Tiers Definition**
+  - [ ] Create Common items (white, basic stats only)
+  - [ ] Design Magic items (blue, 1-2 random affixes)
+  - [ ] Implement Rare items (yellow, 3-6 random affixes)
+  - [ ] Create Set items (green, fixed affixes + set bonuses)
+  - [ ] Design Unique items (gold, fixed stats + special abilities)
+
+- [ ] **Rarity Visual System**
+  - [ ] Implement color coding for each rarity tier
+  - [ ] Create rarity-specific item borders and effects
+  - [ ] Design rarity-based item glow effects
+  - [ ] Implement rarity-specific drop animations
+  - [ ] Create rarity-based sound effects
+
+- [ ] **Rarity Drop Rates**
+  - [ ] Define base drop rates for each rarity tier
+  - [ ] Create monster type specific drop rate modifiers
+  - [ ] Implement area difficulty drop rate scaling
+  - [ ] Design magic find stat influence on drop rates
+  - [ ] Create rarity drop rate balancing system
+
+### 5. Item Durability and Repair
+- [ ] **Durability System**
+  - [ ] Implement maximum durability values for all items
+  - [ ] Create current durability tracking
+  - [ ] Design durability loss from combat and use
+  - [ ] Implement durability loss from death penalties
+  - [ ] Create durability loss from environmental effects
+
+- [ ] **Repair Mechanics**
+  - [ ] Design repair cost calculation system
+  - [ ] Implement repair material requirements
+  - [ ] Create repair skill and tool requirements
+  - [ ] Design repair success/failure mechanics
+  - [ ] Implement repair quality and durability restoration
+
+- [ ] **Durability States**
+  - [ ] Create item condition states (pristine, worn, damaged, broken)
+  - [ ] Implement durability-based stat penalties
+  - [ ] Design durability warning systems
+  - [ ] Create auto-repair options and settings
+  - [ ] Implement durability-based item destruction
+
+### 6. Item Identification System
+- [ ] **Identification Mechanics**
+  - [ ] Create unidentified item state system
+  - [ ] Implement identification scroll/item requirements
+  - [ ] Design identification skill and level requirements
+  - [ ] Create identification cost and material systems
+  - [ ] Implement identification success/failure mechanics
+
+- [ ] **Identification States**
+  - [ ] Design unidentified item appearance and properties
+  - [ ] Create partially identified item states
+  - [ ] Implement cursed item identification
+  - [ ] Design special item identification requirements
+  - [ ] Create identification-based item value changes
+
+- [ ] **Auto-Identification**
+  - [ ] Implement automatic identification for low-level items
+  - [ ] Create identification based on character level
+  - [ ] Design identification based on item type knowledge
+  - [ ] Implement identification skill progression
+  - [ ] Create identification-based quality bonuses
+
+---
+
+## 🔧 Advanced Item Features
+
+### 7. Item Socketing System
+- [ ] **Socket Mechanics**
+  - [ ] Design socketable item types and restrictions
+  - [ ] Implement socket count determination system
+  - [ ] Create socket creation and modification mechanics
+  - [ ] Design socket size and compatibility systems
+  - [ ] Implement socket-based item enhancement
+
+- [ ] **Gem and Rune System**
+  - [ ] Create gem types and socketing effects
+  - [ ] Design rune types and runeword combinations
+  - [ ] Implement gem upgrading and combination
+  - [ ] Create rune upgrading and transformation
+  - [ ] Design gem/run removal and replacement mechanics
+
+### 8. Item Enhancement and Modification
+- [ ] **Enhancement System**
+  - [ ] Create item enhancement levels and caps
+  - [ ] Implement enhancement material requirements
+  - [ ] Design enhancement success/failure mechanics
+  - [ ] Create enhancement-based stat improvements
+  - [ ] Implement enhancement-based durability changes
+
+- [ ] **Item Modification**
+  - [ ] Design item rerolling and rerolling mechanics
+  - [ ] Create item stat modification systems
+  - [ ] Implement item type conversion mechanics
+  - [ ] Design item fusion and combination systems
+  - [ ] Create item degradation and corruption mechanics
+
+### 9. Item Economy and Value
+- [ ] **Item Value System**
+  - [ ] Create base item value calculation formulas
+  - [ ] Implement rarity-based value modifiers
+  - [ ] Design condition-based value adjustments
+  - [ ] Create market-based value fluctuations
+  - [ ] Implement demand-based value scaling
+
+- [ ] **Vendor System Integration**
+  - [ ] Design vendor buy/sell price calculations
+  - [ ] Create vendor inventory and restocking
+  - [ ] Implement vendor reputation and discount systems
+  - [ ] Design vendor-specific item availability
+  - [ ] Create vendor-based item identification services
+
+---
+
+## 📋 Milestones & Deliverables
+
+### Milestone 1: Core Item System (Week 1)
+- [ ] All item types defined and implemented
+- [ ] Base stats and requirements system complete
+- [ ] Item level scaling working
+- [ ] Basic rarity system functional
+
+### Milestone 2: Advanced Features (Week 2)
+- [ ] Durability and repair system complete
+- [ ] Item identification system working
+- [ ] Socketing system implemented
+- [ ] Enhancement system functional
+
+### Milestone 3: Polish & Balance (Week 3)
+- [ ] Item economy and value system complete
+- [ ] All item mechanics balanced and tested
+- [ ] Item system documentation complete
+- [ ] Performance optimization complete
+
+---
+
+## 🔄 Parallelizable Tasks
+
+### Can Run in Parallel:
+- Item type definitions + Base stats system
+- Item level scaling + Rarity system
+- Durability system + Identification system
+- Socketing system + Enhancement system
+
+### Sequential Dependencies:
+- Base stats depend on item type definitions
+- Rarity system depends on base item system
+- Advanced features depend on core systems
+
+---
+
+## 🎯 Success Criteria
+
+- [ ] All item types are properly defined and functional
+- [ ] Item scaling provides appropriate progression
+- [ ] Rarity system creates meaningful item variety
+- [ ] Durability system adds strategic depth
+- [ ] Item identification creates discovery mechanics
+- [ ] System is balanced and provides good gameplay
+
+---
+
+## 📝 Notes
+
+### Design Considerations:
+- Ensure item variety without overwhelming players
+- Balance item power progression with game difficulty
+- Create meaningful choices in item selection
+- Design for both casual and hardcore players
+- Plan for long-term item system evolution
+
+### Technical Considerations:
+- Use efficient data structures for item storage
+- Implement proper item data validation
+- Design for easy item system modifications
+- Consider item data versioning and migration
+- Plan for item system performance optimization
+
+### Balance Considerations:
+- Test item drop rates and player satisfaction
+- Ensure no single item type dominates gameplay
+- Balance item power with character progression
+- Consider item economy and inflation control
+- Plan for item system balance updates
