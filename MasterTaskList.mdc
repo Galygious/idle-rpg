@@ -1,0 +1,406 @@
+# Master Task List: Idle RPG Web Game (Diablo II-Inspired Loot)
+
+## Project Overview
+A web-based idle RPG featuring Diablo II-style loot systems with random affixes, rarity tiers, item sets, and deep progression mechanics. Players will engage in automated combat while managing inventory, crafting, and character builds.
+
+---
+
+## 🎯 Phase 1: Foundation & Core Systems
+
+### 1.1 Technical Infrastructure
+- [ ] **Project Setup**
+  - [ ] Initialize web project (React/Vue/Angular + Node.js backend)
+  - [ ] Set up development environment and build tools
+  - [ ] Configure version control and branching strategy
+  - [ ] Set up CI/CD pipeline basics
+  - [ ] Create project documentation structure
+
+- [ ] **Database Design**
+  - [ ] Design player data schema (character stats, inventory, progress)
+  - [ ] Design item database schema (base items, affixes, sets)
+  - [ ] Design monster/encounter database
+  - [ ] Set up database (PostgreSQL/MongoDB)
+  - [ ] Create database migration system
+  - [ ] Implement data backup and recovery procedures
+
+- [ ] **Backend API Foundation**
+  - [ ] Set up Express.js/Fastify server
+  - [ ] Implement authentication system (JWT/sessions)
+  - [ ] Create user registration and login endpoints
+  - [ ] Set up API rate limiting and security middleware
+  - [ ] Implement data validation and sanitization
+  - [ ] Create logging and monitoring system
+
+### 1.2 Core Game Loop
+- [ ] **Idle Combat System**
+  - [ ] Design combat calculation engine (damage, defense, speed)
+  - [ ] Implement automated battle progression
+  - [ ] Create monster encounter generation
+  - [ ] Add combat speed controls (1x, 2x, 4x, auto-advance)
+  - [ ] Implement combat pause/resume functionality
+  - [ ] Add combat statistics tracking
+
+- [ ] **Character Progression**
+  - [ ] Design character class system (Warrior, Mage, Rogue, etc.)
+  - [ ] Implement leveling system with stat allocation
+  - [ ] Create skill tree system
+  - [ ] Add passive abilities and bonuses
+  - [ ] Implement prestige/rebirth mechanics
+  - [ ] Create character save/load system
+
+- [ ] **Basic UI Framework**
+  - [ ] Design responsive layout system
+  - [ ] Create navigation menu structure
+  - [ ] Implement modal and popup systems
+  - [ ] Set up state management (Redux/Vuex)
+  - [ ] Create reusable UI components
+  - [ ] Implement theme system (light/dark mode)
+
+---
+
+## 🎮 Phase 2: Loot System (Diablo II-Inspired)
+
+### 2.1 Item Database & Generation
+- [ ] **Base Item System**
+  - [ ] Create item type definitions (weapons, armor, accessories)
+  - [ ] Design item base stats and requirements
+  - [ ] Implement item level scaling
+  - [ ] Create item rarity system (Common, Magic, Rare, Set, Unique)
+  - [ ] Add item durability and repair mechanics
+  - [ ] Implement item identification system
+
+- [ ] **Affix System**
+  - [ ] Design prefix and suffix pools by item type
+  - [ ] Create affix tier system (Tier 1-6)
+  - [ ] Implement affix roll ranges and scaling
+  - [ ] Add conditional affixes (class-specific, level requirements)
+  - [ ] Create affix conflict resolution (mutually exclusive mods)
+  - [ ] Implement affix weight balancing system
+
+- [ ] **Item Generation Engine**
+  - [ ] Create random item generation algorithm
+  - [ ] Implement rarity-based affix count limits
+  - [ ] Add item level vs character level scaling
+  - [ ] Create boss/elite monster loot tables
+  - [ ] Implement seasonal/event item modifiers
+  - [ ] Add item generation logging for debugging
+
+### 2.2 Item Sets & Uniques
+- [ ] **Set Items**
+  - [ ] Design set item themes and bonuses
+  - [ ] Create set piece identification system
+  - [ ] Implement progressive set bonuses (2-piece, 4-piece, 6-piece)
+  - [ ] Add set item drop rate balancing
+  - [ ] Create set item visual indicators
+  - [ ] Implement set item trading restrictions
+
+- [ ] **Unique Items**
+  - [ ] Design unique item concepts and themes
+  - [ ] Create unique item special abilities
+  - [ ] Implement unique item drop conditions
+  - [ ] Add unique item lore and descriptions
+  - [ ] Create unique item visual effects
+  - [ ] Implement unique item rarity scaling
+
+### 2.3 Inventory & Equipment
+- [ ] **Inventory Management**
+  - [ ] Create grid-based inventory system
+  - [ ] Implement item stacking and organization
+  - [ ] Add inventory sorting and filtering
+  - [ ] Create item comparison tooltips
+  - [ ] Implement inventory expansion mechanics
+  - [ ] Add item search and tagging system
+
+- [ ] **Equipment System**
+  - [ ] Design equipment slot system (12+ slots)
+  - [ ] Implement equipment stat calculation
+  - [ ] Create equipment set bonus tracking
+  - [ ] Add equipment durability display
+  - [ ] Implement equipment comparison interface
+  - [ ] Create equipment loadout saving
+
+---
+
+## 🏗️ Phase 3: Advanced Gameplay Systems
+
+### 3.1 Crafting & Enhancement
+- [ ] **Crafting System**
+  - [ ] Design crafting material types and sources
+  - [ ] Create crafting recipe database
+  - [ ] Implement crafting success/failure mechanics
+  - [ ] Add crafting skill progression
+  - [ ] Create special crafting stations
+  - [ ] Implement crafting material storage
+
+- [ ] **Item Enhancement**
+  - [ ] Create gem socketing system
+  - [ ] Implement item enchanting/upgrading
+  - [ ] Add item rerolling mechanics
+  - [ ] Create item fusion/combination system
+  - [ ] Implement enhancement failure consequences
+  - [ ] Add enhancement material economy
+
+### 3.2 Progression & Prestige
+- [ ] **Advanced Progression**
+  - [ ] Implement paragon/prestige levels
+  - [ ] Create mastery point allocation
+  - [ ] Add achievement system with rewards
+  - [ ] Implement seasonal progression resets
+  - [ ] Create leaderboards and rankings
+  - [ ] Add progression milestone rewards
+
+- [ ] **Endgame Content**
+  - [ ] Design infinite dungeon system
+  - [ ] Create boss rush modes
+  - [ ] Implement challenge rifts/portals
+  - [ ] Add daily/weekly challenges
+  - [ ] Create guild/party content
+  - [ ] Implement competitive modes
+
+### 3.3 Economy & Trading
+- [ ] **In-Game Economy**
+  - [ ] Create currency system (gold, gems, tokens)
+  - [ ] Implement vendor system with rotating stock
+  - [ ] Add auction house/marketplace
+  - [ ] Create item value calculation system
+  - [ ] Implement inflation control mechanisms
+  - [ ] Add economic event systems
+
+---
+
+## 🎨 Phase 4: User Interface & Experience
+
+### 4.1 Core UI Implementation
+- [ ] **Main Game Interface**
+  - [ ] Create combat display with damage numbers
+  - [ ] Implement character stats panel
+  - [ ] Design inventory management interface
+  - [ ] Create equipment comparison windows
+  - [ ] Add progress bars and notifications
+  - [ ] Implement tooltip system for all items
+
+- [ ] **Navigation & Menus**
+  - [ ] Create main menu with character selection
+  - [ ] Implement settings and options menu
+  - [ ] Design help and tutorial system
+  - [ ] Add social features (friends, guilds)
+  - [ ] Create achievement and statistics displays
+  - [ ] Implement save/load game interface
+
+### 4.2 Visual Polish
+- [ ] **Graphics & Animation**
+  - [ ] Create item icon system (500+ unique icons)
+  - [ ] Design character avatar system
+  - [ ] Implement particle effects for rare drops
+  - [ ] Create loading screens and transitions
+  - [ ] Add visual feedback for all interactions
+  - [ ] Implement responsive design for mobile
+
+- [ ] **Audio System**
+  - [ ] Create background music system
+  - [ ] Implement sound effects for combat
+  - [ ] Add audio cues for item drops
+  - [ ] Create ambient sound system
+  - [ ] Implement audio settings and controls
+  - [ ] Add voice acting for key characters
+
+### 4.3 User Experience
+- [ ] **Accessibility & Usability**
+  - [ ] Implement keyboard navigation
+  - [ ] Add screen reader compatibility
+  - [ ] Create colorblind-friendly design
+  - [ ] Implement customizable UI scaling
+  - [ ] Add tutorial and onboarding flow
+  - [ ] Create help documentation system
+
+---
+
+## 🚀 Phase 5: Deployment & Launch
+
+### 5.1 Performance & Optimization
+- [ ] **Performance Tuning**
+  - [ ] Implement client-side caching strategies
+  - [ ] Optimize database queries and indexing
+  - [ ] Add CDN for static assets
+  - [ ] Implement lazy loading for game content
+  - [ ] Create performance monitoring dashboard
+  - [ ] Add memory leak detection and prevention
+
+- [ ] **Scalability Preparation**
+  - [ ] Set up load balancing for backend
+  - [ ] Implement database sharding strategy
+  - [ ] Create auto-scaling infrastructure
+  - [ ] Add caching layers (Redis/Memcached)
+  - [ ] Implement rate limiting and DDoS protection
+  - [ ] Create disaster recovery procedures
+
+### 5.2 Testing & Quality Assurance
+- [ ] **Automated Testing**
+  - [ ] Set up unit testing framework
+  - [ ] Create integration test suite
+  - [ ] Implement end-to-end testing
+  - [ ] Add performance testing benchmarks
+  - [ ] Create automated deployment testing
+  - [ ] Implement security testing procedures
+
+- [ ] **Manual Testing**
+  - [ ] Create comprehensive test cases
+  - [ ] Perform cross-browser compatibility testing
+  - [ ] Test mobile device compatibility
+  - [ ] Conduct user acceptance testing
+  - [ ] Perform stress testing with high loads
+  - [ ] Create bug tracking and resolution system
+
+### 5.3 Launch Preparation
+- [ ] **Pre-Launch Setup**
+  - [ ] Set up production servers and infrastructure
+  - [ ] Configure monitoring and alerting systems
+  - [ ] Create backup and recovery procedures
+  - [ ] Implement analytics and tracking
+  - [ ] Set up customer support systems
+  - [ ] Create launch marketing materials
+
+- [ ] **Launch Execution**
+  - [ ] Deploy to production environment
+  - [ ] Monitor system performance and stability
+  - [ ] Handle launch day issues and hotfixes
+  - [ ] Collect user feedback and metrics
+  - [ ] Plan post-launch content updates
+  - [ ] Create community management strategy
+
+---
+
+## 🔄 Phase 6: Post-Launch & Content Expansion
+
+### 6.1 Live Operations
+- [ ] **Monitoring & Maintenance**
+  - [ ] Set up 24/7 system monitoring
+  - [ ] Create automated backup procedures
+  - [ ] Implement security update protocols
+  - [ ] Add performance optimization routines
+  - [ ] Create incident response procedures
+  - [ ] Implement data analytics and reporting
+
+- [ ] **Community Management**
+  - [ ] Set up Discord/Reddit communities
+  - [ ] Create player feedback collection system
+  - [ ] Implement bug report and suggestion systems
+  - [ ] Add player support ticket system
+  - [ ] Create community events and contests
+  - [ ] Develop player communication strategy
+
+### 6.2 Content Updates
+- [ ] **Regular Content**
+  - [ ] Create monthly item additions
+  - [ ] Implement seasonal events and rewards
+  - [ ] Add new monster types and encounters
+  - [ ] Create new crafting recipes and materials
+  - [ ] Implement balance updates and patches
+  - [ ] Add new achievements and challenges
+
+- [ ] **Major Expansions**
+  - [ ] Design new character classes
+  - [ ] Create new game modes and features
+  - [ ] Implement new item sets and uniques
+  - [ ] Add new areas and dungeons
+  - [ ] Create new progression systems
+  - [ ] Implement new social features
+
+### 6.3 Monetization & Business
+- [ ] **Revenue Systems**
+  - [ ] Implement premium currency system
+  - [ ] Create cosmetic item shop
+  - [ ] Add convenience features (auto-sell, inventory expansion)
+  - [ ] Implement battle pass/season pass system
+  - [ ] Create premium account benefits
+  - [ ] Add advertising integration (optional)
+
+- [ ] **Business Analytics**
+  - [ ] Track player retention and engagement
+  - [ ] Monitor revenue and conversion metrics
+  - [ ] Analyze player behavior and preferences
+  - [ ] Create A/B testing framework
+  - [ ] Implement player segmentation
+  - [ ] Create business intelligence dashboards
+
+---
+
+## 📊 Key Features Highlight
+
+### Diablo II-Inspired Loot Mechanics
+- **Random Affixes**: Items can roll 1-6 random magical properties with varying tiers
+- **Rarity System**: Common → Magic → Rare → Set → Unique progression
+- **Item Sets**: 2-6 piece sets with progressive bonuses
+- **Unique Items**: Special items with fixed properties and unique abilities
+- **Socket System**: Gems and runes for item customization
+- **Item Level**: Scaling system affecting affix tiers and drop rates
+
+### Idle RPG Features
+- **Automated Combat**: Hands-off progression with strategic depth
+- **Offline Progress**: Continue gaining resources while away
+- **Prestige System**: Reset progression for permanent bonuses
+- **Multiple Characters**: Different classes with unique playstyles
+- **Endless Content**: Infinite scaling dungeons and challenges
+
+---
+
+## 🎯 Priority Matrix
+
+### Critical Path (Must Complete First)
+1. Technical Infrastructure
+2. Core Game Loop
+3. Basic Loot System
+4. Character Progression
+5. Essential UI
+
+### High Priority (Core Experience)
+1. Advanced Loot Mechanics
+2. Inventory Management
+3. Combat Balance
+4. User Experience Polish
+5. Performance Optimization
+
+### Medium Priority (Enhanced Experience)
+1. Crafting Systems
+2. Endgame Content
+3. Social Features
+4. Audio/Visual Polish
+5. Mobile Optimization
+
+### Low Priority (Nice to Have)
+1. Advanced Analytics
+2. Complex Monetization
+3. Competitive Features
+4. Extensive Content
+5. Advanced Social Systems
+
+---
+
+## 📝 Notes & Considerations
+
+### Technical Considerations
+- Use modern web technologies for cross-platform compatibility
+- Implement progressive web app features for mobile experience
+- Consider serverless architecture for cost efficiency
+- Plan for horizontal scaling from day one
+- Implement comprehensive logging for debugging
+
+### Game Design Considerations
+- Balance idle progression with active engagement
+- Ensure loot drops feel rewarding and meaningful
+- Create clear progression goals and milestones
+- Design systems that work well on mobile devices
+- Plan for long-term player retention
+
+### Business Considerations
+- Research monetization models that don't feel predatory
+- Plan for international markets and localization
+- Consider data privacy regulations (GDPR, CCPA)
+- Plan for community management and support
+- Create sustainable content update schedule
+
+---
+
+*Last Updated: [Current Date]*
+*Version: 1.0*
+*Total Estimated Tasks: 200+*
